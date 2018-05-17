@@ -5,7 +5,6 @@ import unvalidate from '../img/unvalidate.png';
 
 
 export default class Inscription extends React.Component {
-
     checkSamePasswords = event => {
         let password = document.getElementById("password").value;
         let confirmPassword = document.getElementById("confirmPassword").value;
@@ -69,7 +68,7 @@ export default class Inscription extends React.Component {
     render() {
         return (
             <div>
-                <a className="nav-link disabled btn-top-right" style={{textColor : this.props.style}}onClick={this.toggle} >{this.props.buttonLabel}</a>
+                <a className="nav-link disabled btn-top-right" style={{color : this.props.style}}onClick={this.toggle} >{this.props.buttonLabel}</a>
                 <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
                     <ModalHeader toggle={this.toggle}>Devenez Sel'estin(e) dès maintenant !</ModalHeader>
                     <ModalBody>
