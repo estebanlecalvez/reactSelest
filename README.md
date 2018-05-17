@@ -9,7 +9,7 @@
 
 ## C'est parti!
   - Telechargez le projet : 
-  
+
 Pour telecharger le projet, cliquer simplement sur le bouton vert en haut à droite : Clone or Download. Puis cliquer ensuite sur Download zip.
 
   - Installez le projet
@@ -23,6 +23,7 @@ et cliquer sur le premier bouton vers (recommandé pour la plupart des utilisate
 Attendre la fin du téléchargement et l'installer.
 
   - Une fois node js installé : 
+
 Aller dans le dossier où vous avez dézippé le site. Appuyer sur la touche "shift" et faire clique droit dans le dossier > "ouvrir la fenêtre powershell ici".
 
 Tapez la commande : "npm i"
@@ -31,4 +32,4 @@ tapez la commande : "npm start"
 (ça va lancer le serveur local et ouvrir un navigateur internet avec le site)
 
 ## Me contacter si vous avez des questions.
-  # Contactez moi sur slack si vous avez des problèmes.
+  # Contactez moi sur slack (ou sur facebook : Esteban Le Calvez pour une réponse plus rapide) si vous avez des problèmes/questions.
