@@ -571,9 +571,44 @@ mark,
   display: inline-block;
 }
 
+.btn-center{
+  display: flex;
+  justify-content: center;
+}
+.label-80{
+  width:100%;
+}
+
 .figure-img {
   margin-bottom: 0.5rem;
   line-height: 1;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-main {
+  position:fixed;
+  background: white;
+  width: 80%;
+  height: auto;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
 }
 
 .figure-caption {
@@ -2584,6 +2619,10 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 a.btn.disabled,
 fieldset:disabled a.btn {
   pointer-events: none;
+}
+
+ModalHeader{
+  background-color:#2377b9;
 }
 
 .btn-primary {

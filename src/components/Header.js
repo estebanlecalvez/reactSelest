@@ -24,10 +24,10 @@ export default class Header extends Component {
                         <div className="right-top">
                             <ul>
                                 <li className="nav-item">
-                                    <Link to="/inscription"><a className="nav-link disabled btn-top-right">Inscription</a></Link>
+                                    <Inscription style="white" buttonLabel="Devenir Sel'estin(e)"/>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/connexion"><a className="nav-link disabled btn-top-right">Connexion</a></Link>
+                                    <Connexion />
                                 </li>
                             </ul>
                         </div>
@@ -69,7 +69,6 @@ export default class Header extends Component {
                     <Route path="/demandes" component={Demandes} />
                     <Route path="/apropos" component={About} />
                 </div>
-
             </Router>
         );
     }
