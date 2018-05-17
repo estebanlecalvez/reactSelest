@@ -1,13 +1,14 @@
-## Sommaire
+# Sommaire
 
-# Telecharger le projet
-# L'installer
+## Telecharger le projet
+## L'installer
+
   - Dezipper l'archive
   - Installer node js
   - Installer les dependances dans node js
   - Lancer le serveur et 
 
-## C'est parti!
+# C'est parti!
   - Telechargez le projet : 
 
 Pour telecharger le projet, cliquer simplement sur le bouton vert en haut à droite : Clone or Download. Puis cliquer ensuite sur Download zip.
