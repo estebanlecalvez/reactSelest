@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import annonce from './img/annonce.png';
-import partage from './img/partage.png';
-import objet from './img/objet.png';
-import jardin from './img/jardin.png';
-import service from './img/service.png';
-import local from './img/local.png';
-import group from './img/group.png';
-import './css/global.css';
+import annonce from '../img/annonce.png';
+import partage from '../img/partage.png';
+import objet from '../img/objet.png';
+import jardin from '../img/jardin.png';
+import service from '../img/service.png';
+import local from '../img/local.png';
+import group from '../img/group.png';
 
 export default class App extends Component {
     render() {

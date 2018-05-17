@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Inscription extends React.Component {
+export default class Inscription extends React.Component {
 
     verifyPasswordConformity = event => {
         let password = document.getElementById("password").value;
@@ -41,7 +41,8 @@ class Inscription extends React.Component {
     render() {
         return (
             <div>
-                <div class="card-center">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
                     <form>
                         <label>
                             Name:
@@ -62,9 +63,9 @@ class Inscription extends React.Component {
                         </label>
                     </form>
                 </div>
+                <div class="col-sm-4"></div>
             </div>
         );
     }
 }
 
-export default Inscription;
