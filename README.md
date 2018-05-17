@@ -1,25 +1,28 @@
 ## Sommaire
 ## Sommaire
-- Telecharger le projet
-- L'installer
-  # Dezipper l'archive
-  # Installer node js
-  # Installer les dependances dans node js
-  # Lancer le serveur et 
+# Telecharger le projet
+# L'installer
+  - Dezipper l'archive
+  - Installer node js
+  - Installer les dependances dans node js
+  - Lancer le serveur et 
 
 ## C'est parti!
   - Telechargez le projet : 
+  
 Pour telecharger le projet, cliquer simplement sur le bouton vert en haut à droite : Clone or Download. Puis cliquer ensuite sur Download zip.
 
   - Installez le projet
+
 Pour installer le projet, il faudra dézipper l'archive téléchargée n'import où sur le pc.
   
   - Telechargez node js : 
+
 à l'url https://nodejs.org/en/
 et cliquer sur le premier bouton vers (recommandé pour la plupart des utilisateurs)
 Attendre la fin du téléchargement et l'installer.
 
-  -Une fois node js installé : 
+  - Une fois node js installé : 
 Aller dans le dossier où vous avez dézippé le site. Appuyer sur la touche "shift" et faire clique droit dans le dossier > "ouvrir la fenêtre powershell ici".
 
 Tapez la commande : "npm i"
