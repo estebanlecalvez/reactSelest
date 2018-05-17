@@ -1,5 +1,5 @@
 ## Sommaire
-## Sommaire
+
 # Telecharger le projet
 # L'installer
   - Dezipper l'archive
