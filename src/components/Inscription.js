@@ -1,18 +1,22 @@
 import React, { closeStyle } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import logoSmall from '../img/theme/logo_small.png';
 import validate from '../img/validate.png';
 import unvalidate from '../img/unvalidate.png';
 
 
 export default class Inscription extends React.Component {
-    checkSamePasswords = event => {
-        let password = document.getElementById("password").value;
-        let confirmPassword = document.getElementById("confirmPassword").value;
-        let passwordCheck = document.getElementById("passwordCheck");
-        if (password != confirmPassword) {
-            passwordCheck.innerHTML = "<p style='color:red'><b>les mots de passes ne correspondent pas.</b></p>";
+
+    checkEmail = event => {
+        let email = document.getElementById("email");
+        let emailText = document.getElementById("emailText");
+        var regexEmail = new RegExp("^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$");
+        if (regexEmail.test(email.value)) {
+            emailText.innerHTML = "<p style='color:green'>Email correct.</p>";
+            return true;
         } else {
-            passwordCheck.innerHTML = "<p style='color:green'><b>Les mots de passes correspondent.</b></p>";
+            emailText.innerHTML = "<p style='color:red'>Email incorrect.</p>";
+            return false;
         }
     }
 
@@ -32,8 +36,40 @@ export default class Inscription extends React.Component {
         if (longueur.test(password)) longueurDOM.style.color = "green"; else longueurDOM.style.color = "red";
         if (majuscule.test(password) && minuscule.test(password) && chiffre.test(password) && longueur.test(password)) {
             return true;
+        } else {
+            return false;
         }
     };
+
+
+    checkSamePasswords = event => {
+        let password = document.getElementById("password").value;
+        let confirmPassword = document.getElementById("confirmPassword").value;
+        let passwordCheck = document.getElementById("passwordCheck");
+        if (password != confirmPassword) {
+            passwordCheck.innerHTML = "<p style='color:red'><b>les mots de passes ne correspondent pas.</b></p>";
+            return false;
+        } else {
+            passwordCheck.innerHTML = "<p style='color:green'><b>Les mots de passes correspondent.</b></p>";
+            return true;
+        }
+    }
+
+    verifyBeforeSend = event => {
+        let verifyBeforeSend = document.getElementById("verifyBeforeSend");
+         if (this.checkSamePasswords() && this.verifyPasswordConformity() && this.checkEmail()) {
+            verifyBeforeSend.innerHTML = "<p style='color:green'<b>Inscription réussie"
+            this.sendInscription();
+            return true;
+        } else {
+            verifyBeforeSend.innerHTML = "<p style='color:red'<b>Certains champs sont incorrects."
+            return false;
+        }
+    }
+
+    sendInscription(){
+        return true;
+    }
 
     showConformity = event => {
         this.verifyPasswordConformity();
@@ -68,11 +104,12 @@ export default class Inscription extends React.Component {
     render() {
         return (
             <div>
-                <a className="nav-link disabled btn-top-right" style={{color : this.props.style}}onClick={this.toggle} >{this.props.buttonLabel}</a>
+                <a className="nav-link disabled btn-top-right" style={{ color: this.props.style }} onClick={this.toggle} >{this.props.buttonLabel}</a>
                 <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-                    <ModalHeader toggle={this.toggle}>Devenez Sel'estin(e) dès maintenant !</ModalHeader>
+                    <ModalHeader style={{ color: '#2377b9' }} toggle={this.toggle}><img src={logoSmall}/> Devenez Sel'estin(e) dès maintenant !</ModalHeader>
                     <ModalBody>
                         <form>
+                            <p style={{ color: '#2377b9' }}>* Champs obligatoires</p>
                             <label className="label-80">Nom*
                                 <input className="form-control" type="text" name="name" />
                             </label>
@@ -80,8 +117,10 @@ export default class Inscription extends React.Component {
                                 <input className="form-control" type="text" name="name" />
                             </label>
                             <label className="label-80">Email*
-                                <input className="form-control" type="text" name="name" />
+                                <input className="form-control" type="email" name="name" onChange={e => this.checkEmail(e) }id="email"/>
                             </label>
+                            <b><p id="emailText"></p></b>
+                            <p style={{ color: '#2377b9' }}>Veuillez entrer un e-mail valide pour que nous puissions vous contacter et valider l'inscription.</p>
                             <label className="label-80">Telephone mobile
                                 <input className="form-control" type="text" name="name" />
                             </label>
@@ -103,6 +142,7 @@ export default class Inscription extends React.Component {
                                     onFocus={e => this.showConformity(e)}
                                     onBlur={e => this.hideConformity(e)}
                                     id="password" />
+                                <p></p>
                                 <b><p id="majuscule"></p>
                                     <p id="minuscule"></p>
                                     <p id="chiffre"></p>
@@ -115,6 +155,7 @@ export default class Inscription extends React.Component {
                                 <b><p id="passwordCheck"></p></b>
                             </label>
                             <p></p>
+                            <p id="verifyBeforeSend"></p>
                         </form>
                     </ModalBody>
                     <ModalFooter>

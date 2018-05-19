@@ -1,3 +1,7 @@
+img {
+  max-width: 100%;
+}
+
 /* latin */
 @font-face {
   font-family: "Open Sans";
