@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import LeftMenu from '../components/LeftMenu';
-
+// TODO: Transformer les composants Offres et demande 
+// en composant liste pour plus d'adaptabilité si possible.
 export default class Demande extends Component {
+
+    
     render() {
         return (
             <div className="container-fluid">

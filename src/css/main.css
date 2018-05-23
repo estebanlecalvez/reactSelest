@@ -6779,8 +6779,9 @@ blockquote {
   color: white; }
 
 .backred {
-  background-color: red;
-  color: white; }
+  background-color: #cfcfcf; }
+  .backred p, .backred h4 {
+    color: black; }
 
 .demande {
   margin-bottom: 2%;
