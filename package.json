@@ -16,19 +16,17 @@
     "react-scripts": "1.1.4",
     "react-tooltip": "^3.6.0",
     "reactstrap": "^6.0.1",
-    "sass": "^1.3.2",
     "simple-react-modal": "^0.5.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css build-js",
-    "build-css": "sass src/scss/styles.scss styles.css",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "build-css": "node-sass --include-path scss public/scss/main.scss src/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "devDependencies": {
     "node-sass": "^4.9.0",
-    "sass-loader": "^7.0.1"
+    "nodemon": "^1.17.5"
   }
 }
