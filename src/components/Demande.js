@@ -1,72 +1,72 @@
 import React, { Component } from 'react';
 
-export default class Demandes extends Component {
+export default class Demande extends Component {
     render() {
         return (
             <div className="container-fluid">
                 <div className="row links">
-                    <div className="col-sm-3 zone-left">
+                    <div className="col-sm-3">
                         <h2>Demandes d'objets</h2>
                         <hr className="my-2" />
-                        <nav>
+                        <nav className="border border-secondary jumbotron">
                             <ul>
-                                <li className>
-                                    <a href>Offres</a>
+                                <li>
+                                    <a>Offres</a>
                                 </li>
-                                <li className>
-                                    <a href>Dernières offres</a>
+                                <li>
+                                    <a>Dernières offres</a>
                                 </li>
-                                <li className>
-                                    <a href>Catégories offres</a>
+                                <li>
+                                    <a>Catégories offres</a>
                                 </li>
-                                <li className>
-                                    <a href>Catégories les plus utilisés</a>
+                                <li>
+                                    <a>Catégories les plus utilisés</a>
                                 </li>
-                                <li className>
-                                    <a href>Poster une offre</a>
+                                <li>
+                                    <a>Poster une offre</a>
                                 </li>
-                                <li className>
-                                    <a href>Dernières demandes</a>
+                                <li>
+                                    <a>Dernières demandes</a>
                                 </li>
-                                <li className>
-                                    <a href>Catégories des demandes</a>
+                                <li>
+                                    <a>Catégories des demandes</a>
                                 </li>
-                                <li className>
-                                    <a href>Catégories les plus utilisés</a>
+                                <li>
+                                    <a>Catégories les plus utilisés</a>
                                 </li>
-                                <li className>
-                                    <a href>Poster une demande</a>
+                                <li>
+                                    <a>Poster une demande</a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
-                    <div className="col-sm-5 zone-center">
+                    <div className="card bottom_shadowed_box col-sm-5">
                         <div className="card-body">
                             <h2 className="card-title">Emeline La Fondue</h2>
                             <strong className="card-text">Description</strong>
                             <p className="card-title">Cherche une personne pour venir m'aider à garder les chiens des voisins, ils sont très gentils, et en manque d'amuuur, pliz hailp</p>
                         </div>
-                        <div className="txt-categorie">
+                        <div >
                             <p className="lead">Categorie :
-                          <span>
+          <span>
                                     Multiple
-                          </span>
+          </span>
                             </p>
                             <p className="lead">Souèts :
-                          <span>
+          <span>
                                     120(2heures)
-                          </span>
+          </span>
                             </p>
                             <p className="lead">Date souhaitée :
-                          <span>
+          <span>
                                     12/07/2018
-                          </span>
+          </span>
                             </p>
                             <button type="button" className="btn btn-success">Accepter</button>
                         </div>
                     </div>
-                    <div className="col-sm-4 zone-right">
-                        <img className src="img/theme/profil.png" alt="Card image cap" />
+                    <div className="card bottom_shadowed_box col-sm-3">
+                        <img className="card-img-top" src="img/theme/profil.png" alt="Card image cap" />
                         <div className="card-body">
                             <p className="card-title">User Name</p>
                             <p className="card-text">Description</p>
@@ -76,6 +76,8 @@ export default class Demandes extends Component {
                     </div>
                 </div>
             </div>
+
+
         );
     }
 }

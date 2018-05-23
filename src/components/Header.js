@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Home from '../components/Home';
 import Inscription from '../components/Inscription';
 import Connexion from '../components/Connexion';
-import Demandes from '../components/Demandes';
+import ListeDemandes from '../components/ListeDemandes';
+import Demande from '../components/Demande';
 import About from '../components/About';
 import Faq from '../components/Faq';
 import Aide from '../components/Aide';
@@ -24,7 +25,7 @@ export default class Header extends Component {
                         <div className="right-top">
                             <ul>
                                 <li className="nav-item">
-                                    <Inscription style="white" buttonLabel="Devenir Sel'estin(e)"/>
+                                    <Inscription style="white" buttonLabel="Devenir Sel'estin(e)" />
                                 </li>
                                 <li className="nav-item">
                                     <Connexion />
@@ -44,7 +45,7 @@ export default class Header extends Component {
                                             <Link to="/"><a className="nav-link">Accueil</a></Link>
                                         </li>
                                         <li className="nav-item active">
-                                            <Link to="/demandes"><a className="nav-link">Demandes</a></Link>
+                                            <Link to="/demandes"><a className="nav-link">Liste des demandes</a></Link>
                                         </li>
                                         <li className="nav-item">
                                             <Link to="/faq"><a className="nav-link">Comment ça marche?</a></Link>
@@ -66,8 +67,9 @@ export default class Header extends Component {
                     <Route exact path="/" component={Home} />
                     <Route path="/inscription" component={Inscription} />
                     <Route path="/connexion" component={Connexion} />
-                    <Route path="/demandes" component={Demandes} />
+                    <Route path="/demandes" component={ListeDemandes} />
                     <Route path="/apropos" component={About} />
+                    <Route path="/demande" component={Demande} />
                 </div>
             </Router>
         );
