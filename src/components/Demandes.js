@@ -19,7 +19,6 @@ export default class Demandes extends Component {
             }else if (nbSouets >= 0) {
                 nbSouetsDOM.style.color = 'yellow';
             } 
-            console.log("the nb of souets " +nbSouets +" did mount")
         }
     }
 

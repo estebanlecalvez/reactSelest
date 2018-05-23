@@ -36,15 +36,7 @@ export default class Demande extends Component {
           </span>
                             </p>
                             <Link to="/messages"><button type="button" className="btn btn-success">Discuter</button></Link>
-                        </div>
-                    </div>
-                    <div className="card bottom_shadowed_box col-sm-3">
-                        <img className="card-img-top" src="img/theme/profil.png" alt="Card image cap" />
-                        <div className="card-body">
-                            <p className="card-title">User Name</p>
-                            <p className="card-text">Description</p>
-                            <p className="card-body">Age : 29</p>
-                            <a className="btn btn-primary">Voir le profil</a>
+                            <Link to="/profil"><button  type="button" className="btn btn-primary">Voir le profil</button></Link>
                         </div>
                     </div>
                 </div>

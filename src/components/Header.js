@@ -11,7 +11,9 @@ import Offre from '../components/Offre';
 import About from '../components/About';
 import Faq from '../components/Faq';
 import Aide from '../components/Aide';
+import Profil from '../components/OthersProfile';
 import logo from '../img/theme/logo.png';
+import OthersProfile from '../components/OthersProfile';
 
 export default class Header extends Component {
     render() {
@@ -79,6 +81,7 @@ export default class Header extends Component {
                     <Route path="/offres" component={Offres} />
                     <Route path="/offre" component={Offre} />
                     <Route path="/messages" component={Messagerie}/>
+                    <Route path="/profil" component={OthersProfile}/>
                 </div>
             </Router>
         );
