@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import LeftMenu from '../components/LeftMenu';
 
-export default class Demande extends Component {
+export default class Offre extends Component {
     render() {
         return (
             <div className="container-fluid">
@@ -45,6 +45,8 @@ export default class Demande extends Component {
                     </div>
                 </div>
             </div>
+
+
         );
     }
 }

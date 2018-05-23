@@ -3,8 +3,10 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Home from '../components/Home';
 import Inscription from '../components/Inscription';
 import Connexion from '../components/Connexion';
-import ListeDemandes from '../components/ListeDemandes';
+import Demandes from '../components/Demandes';
 import Demande from '../components/Demande';
+import Offres from '../components/Offres';
+import Offre from '../components/Offre';
 import About from '../components/About';
 import Faq from '../components/Faq';
 import Aide from '../components/Aide';
@@ -47,6 +49,9 @@ export default class Header extends Component {
                                         <li className="nav-item active">
                                             <Link to="/demandes"><a className="nav-link">Liste des demandes</a></Link>
                                         </li>
+                                        <li className="nav-item active">
+                                            <Link to="/offres"><a className="nav-link">Liste des offres</a></Link>
+                                        </li>
                                         <li className="nav-item">
                                             <Link to="/faq"><a className="nav-link">Comment ça marche?</a></Link>
                                         </li>
@@ -67,9 +72,11 @@ export default class Header extends Component {
                     <Route exact path="/" component={Home} />
                     <Route path="/inscription" component={Inscription} />
                     <Route path="/connexion" component={Connexion} />
-                    <Route path="/demandes" component={ListeDemandes} />
+                    <Route path="/demandes" component={Demandes} />
                     <Route path="/apropos" component={About} />
                     <Route path="/demande" component={Demande} />
+                    <Route path="/offres" component={Offres} />
+                    <Route path="/offre" component={Offre} />
                 </div>
             </Router>
         );

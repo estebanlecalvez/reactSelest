@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import LeftMenu from '../components/LeftMenu';
 import Profil from '../img/theme/avatar.png';
-import Demande from '../components/Demande';
+import Offre from '../components/Offre';
 
-export default class ListeDemandes extends Component {
+export default class Offres extends Component {
     render() {
         return (
                 <div>
@@ -17,7 +17,7 @@ export default class ListeDemandes extends Component {
                             <p> scss : components/list.scss</p>
                             {/* DEMANDE 1 */}
                             <div class="container-fluid backred demande">
-                                <Link to="/demande"><h4>Demande 1</h4></Link>
+                                <Link to="/offre"><h4>Offre 1</h4></Link>
                                 <div class="row">
                                     <div class="col">
                                         <p> Description</p>
@@ -31,7 +31,7 @@ export default class ListeDemandes extends Component {
                             </div>
                             {/* DEMANDE 2 */}
                             <div class="container-fluid backred demande">
-                                <h4>Demande 2</h4>
+                                <h4>Offre 2</h4>
                                 <div class="row">
                                     <div class="col">
                                         <p> Description</p>
@@ -45,7 +45,7 @@ export default class ListeDemandes extends Component {
                             </div>
                             {/* DEMANDE 3 */}
                             <div class="container-fluid backred demande">
-                                <h4>Demande 3</h4>
+                                <h4>Offre 3</h4>
                                 <div class="row">
                                     <div class="col">
                                         <p> Description</p>
@@ -59,7 +59,7 @@ export default class ListeDemandes extends Component {
                             </div>
                             {/* DEMANDE 4 */}
                             <div class="container-fluid backred demande">
-                                <h4>Demande 4</h4>
+                                <h4>Offre 4</h4>
                                 <div class="row">
                                     <div class="col">
                                         <p> Description</p>
