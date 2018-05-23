@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import LeftMenu from '../components/LeftMenu';
 
 export default class Offre extends Component {
@@ -31,7 +32,7 @@ export default class Offre extends Component {
                                     12/07/2018
           </span>
                             </p>
-                            <button type="button" className="btn btn-success">Accepter</button>
+                            <Link to="/messages"><button type="button" className="btn btn-success">Discuter</button></Link>
                         </div>
                     </div>
                     <div className="card bottom_shadowed_box col-sm-3">

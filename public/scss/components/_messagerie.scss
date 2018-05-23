@@ -1,0 +1,46 @@
+.my-messages{
+    background-color:blue;
+    color:white;
+    text-align:right;    
+    padding:5px;
+    border: 2px solid rgb(93, 93, 255);
+    border-radius:5px 10px 0 5px;
+    position: absolute;
+    right:0px;
+    height:40px;
+    padding: 5px;
+    margin-right:5px;
+}
+
+.card-header{
+    img{
+        border-radius:15px 15px 15px 15px;
+    }
+}
+
+.card{
+    margin-bottom:15px;
+    background-color:rgb(241, 241, 241);
+}
+
+.card-footer{
+    input{
+        width:90%;
+        margin-right: 15px;
+    }
+    
+}
+
+.messagerie{
+    padding-top:2%;
+}
+
+.other-messages{
+    background-color:rgb(248, 230, 62);
+    color:black;
+    text-align:left;
+    padding: 5px;
+    border: 2px solid rgb(248, 167, 62);
+    border-radius:0 10px 5px 5px;
+    height:40px;
+}

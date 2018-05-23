@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Home from '../components/Home';
+import Messagerie from '../components/Messagerie';
 import Inscription from '../components/Inscription';
 import Connexion from '../components/Connexion';
 import Demandes from '../components/Demandes';
@@ -77,6 +78,7 @@ export default class Header extends Component {
                     <Route path="/demande" component={Demande} />
                     <Route path="/offres" component={Offres} />
                     <Route path="/offre" component={Offre} />
+                    <Route path="/messages" component={Messagerie}/>
                 </div>
             </Router>
         );

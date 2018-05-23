@@ -6788,3 +6788,39 @@ blockquote {
   .demande img {
     width: 10%;
     height: auto; }
+
+.my-messages {
+  background-color: blue;
+  color: white;
+  text-align: right;
+  padding: 5px;
+  border: 2px solid #5d5dff;
+  border-radius: 5px 10px 0 5px;
+  position: absolute;
+  right: 0px;
+  height: 40px;
+  padding: 5px;
+  margin-right: 5px; }
+
+.card-header img {
+  border-radius: 15px 15px 15px 15px; }
+
+.card {
+  margin-bottom: 15px;
+  background-color: #f1f1f1; }
+
+.card-footer input {
+  width: 90%;
+  margin-right: 15px; }
+
+.messagerie {
+  padding-top: 2%; }
+
+.other-messages {
+  background-color: #f8e63e;
+  color: black;
+  text-align: left;
+  padding: 5px;
+  border: 2px solid #f8a73e;
+  border-radius: 0 10px 5px 5px;
+  height: 40px; }
