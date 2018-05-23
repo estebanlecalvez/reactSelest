@@ -57,8 +57,8 @@ export default class Inscription extends React.Component {
 
     verifyBeforeSend = event => {
         let verifyBeforeSend = document.getElementById("verifyBeforeSend");
-         if (this.checkSamePasswords() && this.verifyPasswordConformity() && this.checkEmail()) {
-            verifyBeforeSend.innerHTML = "<p style='color:green'<b>Inscription réussie"
+        if (this.checkSamePasswords() && this.verifyPasswordConformity() && this.checkEmail()) {
+            verifyBeforeSend.innerHTML = "<p style='color:green'><b>Inscription réussie.</b><br/> L'équipe du Sel'est te contactera rapidement pour te proposer une rencontre et collecter ta cotisation qui est de 2€ annuels.<br/> Merci et à bientôt.<br/><br/><b>L'équipe du Sel'est.</b>"
             this.sendInscription();
             return true;
         } else {
@@ -67,7 +67,7 @@ export default class Inscription extends React.Component {
         }
     }
 
-    sendInscription(){
+    sendInscription() {
         return true;
     }
 
@@ -106,66 +106,69 @@ export default class Inscription extends React.Component {
             <div>
                 <a className="nav-link disabled btn-top-right" style={{ color: this.props.style }} onClick={this.toggle} >{this.props.buttonLabel}</a>
                 <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-                    <ModalHeader style={{ color: '#2377b9' }} toggle={this.toggle}><img src={logoSmall}/> Devenez Sel'estin(e) dès maintenant !</ModalHeader>
+                    <ModalHeader style={{ color: '#2377b9' }} toggle={this.toggle}><img src={logoSmall} /> Devenez Sel'estin(e) dès maintenant !</ModalHeader>
                     <ModalBody>
+                        <p style={{ color: '#2377b9' }}>Pour faire parti de la communauté du Sel'est et participer aux echanges, tu dois d'abord te préinscrire en remplissant le formulaire ci-dessous:</p>
+                        <p style={{ color: '#2377b9' }}>* Champs obligatoires</p>
                         <form>
-                            <p style={{ color: '#2377b9' }}>* Champs obligatoires</p>
-                            <label className="label-80">Nom*
+                            <div class="modal-form">
+                                <label className="label-80">Nom*
                                 <input className="form-control" type="text" name="name" />
-                            </label>
-                            <label className="label-80">Prenom*
+                                </label>
+                                <label className="label-80">Prenom*
                                 <input className="form-control" type="text" name="name" />
-                            </label>
-                            <label className="label-80">Email*
-                                <input className="form-control" type="email" name="name" onChange={e => this.checkEmail(e) }id="email"/>
-                            </label>
-                            <b><p id="emailText"></p></b>
-                            <p style={{ color: '#2377b9' }}>Veuillez entrer un e-mail valide pour que nous puissions vous contacter et valider l'inscription.</p>
-                            <label className="label-80">Telephone mobile
+                                </label>
+                                <label className="label-80">Email*
+                                <input className="form-control" type="email" name="name" onChange={e => this.checkEmail(e)} id="email" />
+                                </label>
+                                <b><p id="emailText"></p></b>
+                                <p style={{ color: '#2377b9' }}>Veuillez entrer un e-mail valide pour que nous puissions vous contacter et valider l'inscription.</p>
+                                <label className="label-80">Telephone mobile
                                 <input className="form-control" type="text" name="name" />
-                            </label>
-                            <label className="label-80">Telephone fixe
+                                </label>
+                                <label className="label-80">Telephone fixe
                                 <input className="form-control" type="text" name="name" />
-                            </label>
-                            <label className="label-80">Code postal*
+                                </label>
+                                <label className="label-80">Code postal*
                                 <input className="form-control" type="text" name="name" />
-                            </label>
-                            <label className="label-80">Ville*
+                                </label>
+                                <label className="label-80">Ville*
                                 <input className="form-control" type="text" name="name" />
-                            </label>
-                            <label className="label-80">Adresse*
+                                </label>
+                                <label className="label-80">Adresse*
                                 <input className="form-control" type="text" name="name" />
-                            </label>
-                            <label className="label-80">Mot de passe*
+                                </label>
+                                <label className="label-80">Mot de passe*
                                 <input className="form-control" type="password" name="password"
-                                    onChange={e => this.verifyPasswordConformity(e)}
-                                    onFocus={e => this.showConformity(e)}
-                                    onBlur={e => this.hideConformity(e)}
-                                    id="password" />
-                                <p></p>
-                                <b><p id="majuscule"></p>
-                                    <p id="minuscule"></p>
-                                    <p id="chiffre"></p>
-                                    <p id="longueur"></p></b>
-                            </label>
-                            <label className="label-80">Confirmation de mot de passe*
+                                        onChange={e => this.verifyPasswordConformity(e)}
+                                        onFocus={e => this.showConformity(e)}
+                                        onBlur={e => this.hideConformity(e)}
+                                        id="password" />
+                                    <p></p>
+                                    <b><p id="majuscule"></p>
+                                        <p id="minuscule"></p>
+                                        <p id="chiffre"></p>
+                                        <p id="longueur"></p></b>
+                                </label>
+                                <label className="label-80">Confirmation de mot de passe*
                                 <input className="form-control" type="password" name="confirmPassword"
-                                    onChange={e => this.checkSamePasswords(e)}
-                                    id="confirmPassword" />
-                                <b><p id="passwordCheck"></p></b>
-                            </label>
-                            <p></p>
-                            <p id="verifyBeforeSend"></p>
+                                        onChange={e => this.checkSamePasswords(e)}
+                                        id="confirmPassword" />
+                                    <b><p id="passwordCheck"></p></b>
+                                </label>
+                                <p></p>
+                                <p id="verifyBeforeSend"></p>
+                                </div>
                         </form>
                     </ModalBody>
-                    <ModalFooter>
-                        <button type="button"
-                            onClick={e => this.verifyBeforeSend(e)}
-                            class="btn btn-success">Envoyer</button>
-                    </ModalFooter>
+                        <ModalFooter>
+                            <button type="button"
+                                onClick={e => this.verifyBeforeSend(e)}
+                                class="btn btn-success">Envoyer</button>
+                        </ModalFooter>
                 </Modal>
             </div>
-        );
-    }
-}
-
+                );
+            }
+        }
+        
