@@ -32,5 +32,13 @@ Attendez que tout se télécharge et
 tapez la commande : "npm start"
 (ça va lancer le serveur local et ouvrir un navigateur internet avec le site)
 
+
+# Pour mettre à jour directement le css en enregistrant dans le css:
+fichier à modifier : src/css/main.scss 
+
+ # Commandes à lancer : 
+ - "npm start" pour lancer le serveur
+ - "npm run watch-css" pour mettre à jour le css sur le site dès qu'on enregistre.
+ (il faudra utiliser 2 invite de commandes differentes.)
 ## Me contacter si vous avez des questions.
   # Contactez moi sur slack (ou sur facebook : Esteban Le Calvez pour une réponse plus rapide) si vous avez des problèmes/questions.
