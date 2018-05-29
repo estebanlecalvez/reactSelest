@@ -7,7 +7,7 @@ import Inscription from './Inscription';
 export default class Connexion extends React.Component {
     //TODO
     isConnected() {
-        if (typeof localStorage.token != "undefined") {
+        if (typeof localStorage.token !== "undefined") {
             return true;
         } else {
             return false;
@@ -15,7 +15,7 @@ export default class Connexion extends React.Component {
     }
 
     verifyBeforeSend = event => {
-        localStorage.token=this.requestBDDForUser();
+        this.requestBDDForUser();
     }
 
     requestBDDForUser() {
@@ -28,7 +28,6 @@ export default class Connexion extends React.Component {
         data.append("mot_de_passe", mdp);
 
         var xhr = new XMLHttpRequest();
-        var toggle= this.toggle();
         xhr.withCredentials = true;
 
         xhr.addEventListener("readystatechange", function () {
@@ -37,7 +36,6 @@ export default class Connexion extends React.Component {
                 var json = JSON.parse(this.responseText);
                 var token = json.token;
                 localStorage.token = token;
-                // text.innerHTML = "<p style='color:green'>Vous êtes connecté.s</p>";
                 window.location.reload();
             }
             if (this.status == 404 && this.readyState == 4) {
@@ -68,35 +66,35 @@ export default class Connexion extends React.Component {
     }
 
     render() {
-        if(!this.isConnected()){
-        return (
-            <div>
-                <a className="nav-link disabled btn-top-right" onClick={this.toggle}>{this.props.buttonLabel}Connexion</a>
-                <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-                    <ModalHeader toggle={this.toggle} style={{ color: '#2377b9' }}><img src={logoSmall} /> Devenez Sel'estin(e) dès maintenant !</ModalHeader>
-                    <ModalBody>
-                        <form>
-                            <label className="label-80">Identifiant*
+        if (!this.isConnected()) {
+            return (
+                <div>
+                    <a className="nav-link disabled btn-top-right" onClick={this.toggle}>{this.props.buttonLabel}Connexion</a>
+                    <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
+                        <ModalHeader toggle={this.toggle} style={{ color: '#2377b9' }}><img src={logoSmall} /> Devenez Sel'estin(e) dès maintenant !</ModalHeader>
+                        <ModalBody>
+                            <form>
+                                <label className="label-80">Identifiant*
                                 <input className="form-control" type="text" name="name" id="id" />
-                            </label>
-                            <label className="label-80">mot de passe*
+                                </label>
+                                <label className="label-80">mot de passe*
                                 <input className="form-control" type="password" name="name" id="mdp" />
-                            </label>
-                            <p style={{ color: '' }} >Vous n'avez pas de compte?<Inscription style="black" buttonLabel="Devenir Sel'estin(e)" /></p>
-                            <b><p id="verifyText" style={{ align: 'left' }}></p></b>
-                        </form>
-                    </ModalBody>
-                    <ModalFooter>
-                        <button type="button"
-                            onClick={e => this.verifyBeforeSend(e)}
-                            class="btn btn-success">Envoyer</button>
-                    </ModalFooter>
-                </Modal>
-            </div>
-        );
-    }else{
-        return null;
+                                </label>
+                                <p style={{ color: '' }} >Vous n'avez pas de compte?<Inscription style="black" buttonLabel="Devenir Sel'estin(e)" /></p>
+                                <b><p id="verifyText" style={{ align: 'left' }}></p></b>
+                            </form>
+                        </ModalBody>
+                        <ModalFooter>
+                            <button type="button"
+                                onClick={e => this.verifyBeforeSend(e)}
+                                class="btn btn-success">Envoyer</button>
+                        </ModalFooter>
+                    </Modal>
+                </div>
+            );
+        } else {
+            return null;
+        }
     }
-}
 }
 
