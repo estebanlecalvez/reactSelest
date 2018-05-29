@@ -16,6 +16,7 @@ import Profil from '../components/OthersProfile';
 import logo from '../img/theme/logo.png';
 import OthersProfile from '../components/OthersProfile';
 import HowItWorks from '../components/HowItWorks';
+import LogoutButton from '../components/LogoutButton';
 
 export default class Header extends Component {
     render() {
@@ -29,14 +30,18 @@ export default class Header extends Component {
                                 <button className="btn btn-outline-success my-2 my-sm-0" type="submit"><span className="txt-recherche">Rechercher</span></button>
                             </form>
                         </div>
-                        <div className="right-top">
+                        <div className="right-top" >
                             <ul>
                                 <li className="nav-item">
-                                    <Inscription style="white" buttonLabel="Devenir Sel'estin(e)" />
+                                    <Inscription buttonLabel="Devenir Sel'estin(e)" />
                                 </li>
                                 <li className="nav-item">
                                     <Connexion />
                                 </li>
+                                <li className="nav-item">
+                                    <LogoutButton buttonLabel="Deconnexion" />
+                                </li>
+
                             </ul>
                         </div>
                     </div>

@@ -5,10 +5,17 @@ import Inscription from './Inscription';
 
 
 export default class Connexion extends React.Component {
+    //TODO
+    isConnected() {
+        if (typeof localStorage.token != "undefined") {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     verifyBeforeSend = event => {
-
-        var token = this.requestBDDForUser();
-
+        localStorage.token=this.requestBDDForUser();
     }
 
     requestBDDForUser() {
@@ -21,6 +28,7 @@ export default class Connexion extends React.Component {
         data.append("mot_de_passe", mdp);
 
         var xhr = new XMLHttpRequest();
+        var toggle= this.toggle();
         xhr.withCredentials = true;
 
         xhr.addEventListener("readystatechange", function () {
@@ -28,8 +36,9 @@ export default class Connexion extends React.Component {
             if (this.status == 200 && this.readyState == 4) {
                 var json = JSON.parse(this.responseText);
                 var token = json.token;
-                console.log(token);
                 localStorage.token = token;
+                // text.innerHTML = "<p style='color:green'>Vous êtes connecté.s</p>";
+                window.location.reload();
             }
             if (this.status == 404 && this.readyState == 4) {
                 var json = JSON.parse(this.responseText);
@@ -59,6 +68,7 @@ export default class Connexion extends React.Component {
     }
 
     render() {
+        if(!this.isConnected()){
         return (
             <div>
                 <a className="nav-link disabled btn-top-right" onClick={this.toggle}>{this.props.buttonLabel}Connexion</a>
@@ -84,6 +94,9 @@ export default class Connexion extends React.Component {
                 </Modal>
             </div>
         );
+    }else{
+        return null;
     }
+}
 }
 
