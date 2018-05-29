@@ -14,11 +14,11 @@ export default class Demandes extends Component {
                 nbSouetsDOM.style.color = 'red';
             } else if (nbSouets < 0) {
                 nbSouetsDOM.style.color = 'orange';
-            }else if (nbSouets > 500) {
+            } else if (nbSouets > 500) {
                 nbSouetsDOM.style.color = 'green';
-            }else if (nbSouets >= 0) {
+            } else if (nbSouets >= 0) {
                 nbSouetsDOM.style.color = 'yellow';
-            } 
+            }
         }
     }
 

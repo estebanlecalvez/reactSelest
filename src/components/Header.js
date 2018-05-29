@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Home from '../components/Home';
+import FbLogo from '../img/theme/fb.png';
 import Messagerie from '../components/Messagerie';
 import Inscription from '../components/Inscription';
 import Connexion from '../components/Connexion';
@@ -14,6 +15,7 @@ import Aide from '../components/Aide';
 import Profil from '../components/OthersProfile';
 import logo from '../img/theme/logo.png';
 import OthersProfile from '../components/OthersProfile';
+import HowItWorks from '../components/HowItWorks';
 
 export default class Header extends Component {
     render() {
@@ -50,13 +52,13 @@ export default class Header extends Component {
                                             <Link to="/"><a className="nav-link">Accueil</a></Link>
                                         </li>
                                         <li className="nav-item active">
-                                            <Link to="/demandes"><a className="nav-link">Liste des demandes</a></Link>
+                                            <Link to="/demandes"><a className="nav-link">Demandes</a></Link>
                                         </li>
                                         <li className="nav-item active">
-                                            <Link to="/offres"><a className="nav-link">Liste des offres</a></Link>
+                                            <Link to="/offres"><a className="nav-link">Offres</a></Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link to="/faq"><a className="nav-link">Comment ça marche?</a></Link>
+                                            <Link to="/comment_ca_marche"><a className="nav-link">Comment ça marche?</a></Link>
                                         </li>
                                         <li className="nav-item dropdown">
                                             <Link to="/aide"><a className="nav-link">Aide</a></Link>
@@ -67,6 +69,10 @@ export default class Header extends Component {
                                                 <a className="dropdown-item" href="#">Something else here</a>
                                             </div>
                                         </li>
+                                        <li className="nav-item">
+                                            <a href="https://www.facebook.com/selest35/" ><img src={FbLogo} style={{ width: '10%' }} /></a>
+                                        </li>
+
                                     </ul>
                                 </div>
                             </nav>
@@ -74,14 +80,16 @@ export default class Header extends Component {
                     </div>
                     <Route exact path="/" component={Home} />
                     <Route path="/inscription" component={Inscription} />
+                    <Route path="/faq" component={Faq} />
                     <Route path="/connexion" component={Connexion} />
                     <Route path="/demandes" component={Demandes} />
                     <Route path="/apropos" component={About} />
                     <Route path="/demande" component={Demande} />
                     <Route path="/offres" component={Offres} />
                     <Route path="/offre" component={Offre} />
-                    <Route path="/messages" component={Messagerie}/>
-                    <Route path="/profil" component={OthersProfile}/>
+                    <Route path="/messages" component={Messagerie} />
+                    <Route path="/profil" component={OthersProfile} />
+                    <Route path="/comment_ca_marche" component={HowItWorks} />
                 </div>
             </Router>
         );
