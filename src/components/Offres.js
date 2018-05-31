@@ -6,8 +6,15 @@ import Offre from '../components/Offre';
 
 export default class Offres extends Component {
 
-
+    isConnected() {
+        if (typeof localStorage.Authorization != "undefined") {
+            return true;
+        } else {
+            return false;
+        }
+    }
     render() {
+        if(this.isConnected()){
         return (
             <div>
                 <div class="row">
@@ -78,5 +85,8 @@ export default class Offres extends Component {
                 </div>
             </div>
         );
+    }else{
+        return <p> Vous devez être connecté. </p>
+    }
     }
 }

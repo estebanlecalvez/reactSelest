@@ -8,7 +8,7 @@ import unvalidate from '../img/unvalidate.png';
 export default class Inscription extends React.Component {
     //TODO
     isConnected() {
-        if (typeof localStorage.token != "undefined") {
+        if (typeof localStorage.Authorization != "undefined") {
             return true;
         } else {
             return false;

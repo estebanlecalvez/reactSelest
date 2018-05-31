@@ -8,7 +8,7 @@ import unvalidate from '../img/unvalidate.png';
 export default class LogoutButton extends React.Component {
     //TODO
     isConnected() {
-        if (typeof localStorage.token != "undefined") {
+        if (typeof localStorage.Authorization != "undefined") {
             return true;
         } else {
             return false;
@@ -16,8 +16,7 @@ export default class LogoutButton extends React.Component {
     }
 
     deconnect(){
-        localStorage.removeItem("token");
-        this.toggle();
+        localStorage.removeItem("Authorization");
         window.location.reload();
     }
 
@@ -40,7 +39,7 @@ export default class LogoutButton extends React.Component {
         if (this.isConnected()) {
             return (
                 <div>
-                    <a className="nav-link disabled btn-top-right" style={{ color: this.props.style }} onClick={this.toggle} >{this.props.buttonLabel}</a>
+                    <Button className="btn btn-danger" onClick={this.toggle}>{this.props.buttonLabel}</Button>
                     <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
                         <ModalHeader style={{ color: '#2377b9' }} toggle={this.toggle}><img src={logoSmall} />Se deconnecter</ModalHeader>
                         <ModalBody>

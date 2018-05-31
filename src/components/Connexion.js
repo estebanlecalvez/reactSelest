@@ -2,12 +2,14 @@ import React, { closeStyle } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import logoSmall from '../img/theme/logo_small.png';
 import Inscription from './Inscription';
+import request from 'request';
 
 
 export default class Connexion extends React.Component {
+
     //TODO
     isConnected() {
-        if (typeof localStorage.token !== "undefined") {
+        if (typeof localStorage.Authorization !== "undefined") {
             return true;
         } else {
             return false;
@@ -23,31 +25,27 @@ export default class Connexion extends React.Component {
         var mdp = document.getElementById("mdp").value;
         var verify = document.getElementById("verifyText");
 
+
         var data = new FormData();
         data.append("identifiant", id);
         data.append("mot_de_passe", mdp);
+        fetch("https://selest-vitre.alwaysdata.net/authentification.php?identifiant=" + id + "&mot_de_passe=" + mdp,
+            {
+                method: 'POST',
+                body: data
+            })
+            .then((response) => response.json())
+            .then((responseJson) => {
+                var text = document.getElementById("verifyText");
+                if (responseJson.success === 0) {
+                    text.innerHTML = "<p style='color:red'>" + responseJson.message + "</p>";
 
-        var xhr = new XMLHttpRequest();
-        xhr.withCredentials = true;
-
-        xhr.addEventListener("readystatechange", function () {
-            var text = document.getElementById("verifyText");
-            if (this.status == 200 && this.readyState == 4) {
-                var json = JSON.parse(this.responseText);
-                var token = json.token;
-                localStorage.token = token;
-                window.location.reload();
-            }
-            if (this.status == 404 && this.readyState == 4) {
-                var json = JSON.parse(this.responseText);
-                var message = json.message;
-                text.innerHTML = "<p style='color:red'>" + message + "</p>";
-            }
-        });
-
-        xhr.open("POST", "http://localhost/selest_ws/authentification.php?identifiant=" + id + "&mot_de_passe=" + mdp);
-
-        xhr.send(data);
+                } else {
+                    var Authorization = responseJson.token;
+                    localStorage.Authorization = Authorization;
+                    window.location.reload();
+                }
+            })
     }
 
     constructor(props) {
