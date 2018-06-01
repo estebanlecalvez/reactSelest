@@ -76,7 +76,12 @@ export default class Connexion extends React.Component {
                                 <input className="form-control" type="text" name="name" id="id" />
                                 </label>
                                 <label className="label-80">mot de passe*
-                                <input className="form-control" type="password" name="name" id="mdp" />
+                                <input className="form-control" type="password" name="name" id="mdp"
+                                        onKeyPress={e => {
+                                            if (e.key === 'Enter') {
+                                                this.verifyBeforeSend(e)
+                                            }
+                                        }} />
                                 </label>
                                 <p style={{ color: '' }} >Vous n'avez pas de compte?<Inscription style="black" buttonLabel="Devenir Sel'estin(e)" /></p>
                                 <b><p id="verifyText" style={{ align: 'left' }}></p></b>

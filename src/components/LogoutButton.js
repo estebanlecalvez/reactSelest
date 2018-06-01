@@ -15,7 +15,7 @@ export default class LogoutButton extends React.Component {
         }
     }
 
-    deconnect(){
+    deconnect() {
         localStorage.removeItem("Authorization");
         window.location.reload();
     }
@@ -38,7 +38,12 @@ export default class LogoutButton extends React.Component {
     render() {
         if (this.isConnected()) {
             return (
-                <div>
+                <div
+                    onKeyPress={e => {
+                        if (e.key === 'Enter') {
+                            this.deconnect(e)
+                        }
+                    }}>
                     <Button className="btn btn-danger" onClick={this.toggle}>{this.props.buttonLabel}</Button>
                     <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
                         <ModalHeader style={{ color: '#2377b9' }} toggle={this.toggle}><img src={logoSmall} />Se deconnecter</ModalHeader>

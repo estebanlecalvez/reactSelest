@@ -48,7 +48,10 @@ export default class Header extends Component {
                                         <div class="dropdown">
                                             <a><img src={profilImg} className="imgHeader" /></a>
                                             <div class="dropdown-content">
-                                                <Link to="mon_compte"><p>Mon compte</p></Link>
+                                                <Link to="mon_compte"><p>Editer mon profil.</p></Link>
+                                                <Link to="mon_compte"><p>Voir mes demandes.</p></Link>
+                                                <Link to="mon_compte"><p>Voir mes offres.</p></Link>
+                                                <p>Mes souets : <a id="souetUser">12</a></p>
                                                 <Link to="parametre_compte"><p>Paramètres</p></Link>
                                                 <hr />
                                                 <LogoutButton buttonLabel="Deconnexion" />
