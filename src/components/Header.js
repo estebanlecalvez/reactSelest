@@ -64,7 +64,7 @@ export default class Header extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-sm-2">
-                                    <img src={logo} alt className="logo" />
+                                    <img src={logo} alt className="logo rotate-hover" />
                                 </div>
                                 <nav className="navbar navbar-expand-lg navbar-success col">
                                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -91,7 +91,7 @@ export default class Header extends Component {
                                                 </div>
                                             </li>
                                             <li className="nav-item">
-                                                <a href="https://www.facebook.com/selest35/" ><img src={FbLogo} style={{ width: '10%' }} /></a>
+                                                <a href="https://www.facebook.com/selest35/" ><img src={FbLogo} style={{ width: '10%' }} className="zoom-hover"/></a>
                                             </li>
 
                                         </ul>
@@ -140,7 +140,7 @@ export default class Header extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-sm-2">
-                                    <img src={logo} alt className="logo" />
+                                    <img src={logo} className="logo rotate-hover" />
                                 </div>
                                 <nav className="navbar navbar-expand-lg navbar-success col">
                                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -158,7 +158,7 @@ export default class Header extends Component {
                                                 <Link to="/faq"><a className="nav-link">Foire aux questions</a></Link>
                                             </li>
                                             <li className="nav-item">
-                                                <a href="https://www.facebook.com/selest35/" ><img src={FbLogo} style={{ width: '10%' }} /></a>
+                                                <a href="https://www.facebook.com/selest35/" ><img src={FbLogo} style={{ width: '10%' }} className="zoom-hover"/></a>
                                             </li>
 
                                         </ul>

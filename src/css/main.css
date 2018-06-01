@@ -6586,6 +6586,31 @@ blockquote {
   width: 45px;
   border-radius: 50%; }
 
+.small-icon {
+  max-width: 20px; }
+
+.zoom-hover {
+  transition-property: transform;
+  -webkit-transition-property: transform;
+  transition-duration: .2s;
+  transition-timing-function: ease-out; }
+  .zoom-hover:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1); }
+
+.rotate-hover {
+  margin: 30px 0 30px 0;
+  transform: rotate(-360deg);
+  -webkit-transform: rotate(-360deg);
+  transition-property: transform, width, height, top;
+  -webkit-transition-property: transform, width, height, top;
+  transition-duration: .4s;
+  transition-timing-function: ease-out;
+  position: relative; }
+  .rotate-hover:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg); }
+
 .img-background {
   background-image: url("../img/img-page-accueil.png");
   background-size: cover;
@@ -6856,3 +6881,6 @@ blockquote {
   padding-right: 10%;
   padding-left: 5%;
   color: blue; }
+
+.imgMyAccount {
+  border-radius: 50%; }
