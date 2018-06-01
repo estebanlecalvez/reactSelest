@@ -1,0 +1,40 @@
+
+
+.actuality-box{
+    padding-top:10px;
+    margin-bottom:20px;
+    border-style:solid;
+    border-width:1px;
+    border-radius: 15px;
+    transition-property: background-color;
+    -webkit-transition-property: background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+    &:hover{
+        background-color:$lightAqua;
+        -webkit-background-color:$lightAqua;
+    }
+    .actualite-img{
+        position: absolute;
+        top: 45%; /* poussé de la moitié de hauteur du référent */
+        transform: translateY(-50%);   
+        border-radius:15px;
+    }
+    .actuality-title{
+        margin-left:10px;
+        p{
+            font-size:30px;
+            font-family:"Agency FB";
+        }
+    }
+
+    .actuality-text{
+        margin-left:10px;
+        p{
+            font-size:20px;
+            font-family:"Agency FB";
+            text-align:justify;
+        }
+    }
+}
+

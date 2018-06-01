@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* latin */
 @font-face {
   font-family: "Open Sans";
@@ -6598,10 +6599,13 @@ blockquote {
     transform: scale(1.1);
     -webkit-transform: scale(1.1); }
 
+.nav-item-logo {
+  max-width: 10%;
+  margin-top: 10px;
+  margin-left: 30px; }
+
 .rotate-hover {
   margin: 30px 0 30px 0;
-  transform: rotate(-360deg);
-  -webkit-transform: rotate(-360deg);
   transition-property: transform, width, height, top;
   -webkit-transition-property: transform, width, height, top;
   transition-duration: .4s;
@@ -6884,3 +6888,34 @@ blockquote {
 
 .imgMyAccount {
   border-radius: 50%; }
+
+.actuality-box {
+  padding-top: 10px;
+  margin-bottom: 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 15px;
+  transition-property: background-color;
+  -webkit-transition-property: background-color;
+  transition-duration: .2s;
+  transition-timing-function: ease-out; }
+  .actuality-box:hover {
+    background-color: #d4f4ff;
+    -webkit-background-color: #d4f4ff; }
+  .actuality-box .actualite-img {
+    position: absolute;
+    top: 45%;
+    /* poussé de la moitié de hauteur du référent */
+    transform: translateY(-50%);
+    border-radius: 15px; }
+  .actuality-box .actuality-title {
+    margin-left: 10px; }
+    .actuality-box .actuality-title p {
+      font-size: 30px;
+      font-family: "Agency FB"; }
+  .actuality-box .actuality-text {
+    margin-left: 10px; }
+    .actuality-box .actuality-text p {
+      font-size: 20px;
+      font-family: "Agency FB";
+      text-align: justify; }

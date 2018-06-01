@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Home from '../components/Home';
+import Home from '../components/Home'; import HomeLogo from '../img/theme/home_logo.png';
 import FbLogo from '../img/theme/fb.png';
 import Messagerie from '../components/Messagerie';
 import Inscription from '../components/Inscription';
@@ -11,6 +11,7 @@ import Offres from '../components/Offres';
 import Offre from '../components/Offre';
 import About from '../components/About';
 import Faq from '../components/Faq';
+import Actualites from '../components/Actualites';
 import Aide from '../components/Aide';
 import Profil from '../components/OthersProfile';
 import logo from '../img/theme/logo.png';
@@ -83,15 +84,9 @@ export default class Header extends Component {
                                             </li>
                                             <li className="nav-item dropdown">
                                                 <Link to="/aide"><a className="nav-link">Aide</a></Link>
-                                                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                    <a className="dropdown-item" href="#">Action</a>
-                                                    <a className="dropdown-item" href="#">Another action</a>
-                                                    <div className="dropdown-divider" />
-                                                    <a className="dropdown-item" href="#">Something else here</a>
-                                                </div>
                                             </li>
-                                            <li className="nav-item">
-                                                <a href="https://www.facebook.com/selest35/" ><img src={FbLogo} style={{ width: '10%' }} className="zoom-hover"/></a>
+                                            <li>
+                                                <a href="https://www.facebook.com/selest35/" ><img src={FbLogo} className="small-icon zoom-hover" /></a>
                                             </li>
 
                                         </ul>
@@ -157,8 +152,11 @@ export default class Header extends Component {
                                             <li className="nav-item dropdown">
                                                 <Link to="/faq"><a className="nav-link">Foire aux questions</a></Link>
                                             </li>
+                                            <li className="nav-item dropdown">
+                                                <Link to="/actualites"><a className="nav-link">Actualites</a></Link>
+                                            </li>
                                             <li className="nav-item">
-                                                <a href="https://www.facebook.com/selest35/" ><img src={FbLogo} style={{ width: '10%' }} className="zoom-hover"/></a>
+                                                <a href="https://www.facebook.com/selest35/" ><img src={FbLogo} className="nav-item-logo zoom-hover" /></a>
                                             </li>
 
                                         </ul>
@@ -172,6 +170,7 @@ export default class Header extends Component {
                         <Route path="/connexion" component={Connexion} />
                         <Route path="/apropos" component={About} />
                         <Route path="/comment_ca_marche" component={HowItWorks} />
+                        <Route path="/actualites" component={Actualites}/>
 
                     </div>
                 </Router>
