@@ -82,9 +82,7 @@ export default class App extends Component {
                     <div className="container">
                         <h2>Comment ça marche.</h2>
                         <div className="row">
-                            <div class="img-zone-marche-left"></div>
-                            <div class="img-zone-marche-centre"></div>
-                            <div class="img-zone-marche-right"></div>
+                            <div class="img-zone-marche"></div>
                         </div>
                     </div>
                 </section>

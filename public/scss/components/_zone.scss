@@ -81,12 +81,19 @@
   background-size: cover;
   text-align: center;
   color: #000;
-  .img-zone-marche-left{
-    background-color: #00ACED;
-    background-image: url("../../src/img/img-marche-left.png");
+  .img-zone-marche{
+
+    @media screen and (min-width:768px){
+      background-image: url("../../src/img/img-zone-marche.png");
+      background-size: cover;
+      width: 100%;
+      height: 160px;
+    }
+    @media screen and (min-width:1170px){
+      height: 242px;
+    }
   }
 }
-
 
 .titre-zone-march{
   margin: 0px;
@@ -108,10 +115,6 @@
   }
 
 }
-
-
-
-
 
 @media screen and (min-width:1200px){
 
