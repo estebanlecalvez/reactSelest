@@ -1,16 +1,38 @@
 .left-menu{
-    background-color:rgb(0, 0, 0);
-    padding-left: 1%;
-    margin-bottom:1%;
-    margin-left :2%;
-    margin-right : 1%;
-    color : white;
-    .first-child{
-        padding-left : 3%;
+    padding-top:10px;
+    margin:10px;
+    margin-left:30px;
+    border-style:solid;
+    border-width:2px;
+    border-color: #2377b9;
+    border-radius: 15px;
+    .categorie-title{
+        text-align:center;
+        color:#2377b9;
+        &:hover{
+            font-weight:bold;
+        }
     }
-    .second-child{
-        padding-left : 5%;
+    .categorie-parent{
+        padding-left:10px;
+        font-weight:bold;
+        .categorie-enfant{
+            border-radius:10px;
+            padding-left:30px;
+            font-weight:300;
+            transition-property: background-color;
+            -webkit-transition-property: background-color;
+            transition-duration: .2s;
+            transition-timing-function: ease-out;
+            &:hover{
+                background-color:#2377b9;
+                font-weight:bold;
+                color:white;
+            }          
+        }
     }
+
+    
     
 }
 

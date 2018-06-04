@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import LeftMenu from '../components/LeftMenu';
 import Profil from '../img/theme/avatar.png';
 import Offre from '../components/Offre';
+import { Button } from 'react-bootstrap';
+
 
 export default class Offres extends Component {
 
@@ -14,79 +16,97 @@ export default class Offres extends Component {
         }
     }
     render() {
-        if(this.isConnected()){
-        return (
-            <div>
-                <div class="row">
-                    <div class="col-3 left-menu">
-                        <LeftMenu />
+        if (this.isConnected()) {
+            return (
+                <div>
+                    <div className="banniere">
+                        <div className="banniere-chemin">
+                            <p> Accueil/Demandes</p>
+                        </div>
                     </div>
-                    {/* {this.forOffre(jsx)} */}
-                    <div class="col backblue">
-                        <p>LISTE DES DEMANDES COMPONENT</p>
-                        <p> scss : components/list.scss</p>
+                    <div class="row">
+                        <div class="col-sm-2 left-menu">
+                            <LeftMenu />
+                        </div>
                         {/* DEMANDE 1 */}
-                        <div class="container-fluid backred demande">
-                            <Link to="/offre"><h4>Offre 1</h4></Link>
-                            <div class="row">
-                                <div class="col">
-                                    <p> Description</p>
-                                </div>
-                                <div class="col">
+                        <div class="col-8">
+                            <div class="row offres-box">
+                                <div className="col-sm-2 offres-demandeur">
                                     <p> Demandeur(se)</p>
                                     <img src={Profil} />
-                                    <a> Esteban</a>
+                                    <p><b> Maxime</b></p>
+                                    <p>Souèts: <b><a id="SouetsUserNb1">-1501</a></b></p>
+                                </div>
+                                <div class="col-sm-7 offres-text">
+                                    <div className="offres-title">
+                                        <p>Garde d'enfants</p>
+                                    </div>
+                                    <div>
+                                        <p>Je cherche quelqu'un de disponible sur la semaine du 14/08/2018 au 20/08/2018 pour garder ma fille Lila et mon garçon Diego de 8h30 à 18h</p>
+                                    </div>
+                                    <Button className="btn btn-success">En savoir plus</Button>
                                 </div>
                             </div>
-                        </div>
-                        {/* DEMANDE 2 */}
-                        <div class="container-fluid backred demande">
-                            <h4>Offre 2</h4>
-                            <div class="row">
-                                <div class="col">
-                                    <p> Description</p>
-                                </div>
-                                <div class="col">
-                                    <p> Demandeur(se)</p>
+
+                            <div class="row offres-box">
+                                <div className="col-sm-2 offres-demandeur">
+                                    <a> Demandeur(se)</a>
                                     <img src={Profil} />
-                                    <a> Joey</a>
+                                    <p><b>Esteban</b></p>
+                                    <p>Souèts: <b><a id="SouetsUserNb2">0</a></b></p>
+                                </div>
+                                <div class="col-sm-7 offres-text">
+                                    <div className="offres-title">
+                                        <p>Garde d'enfants</p>
+                                    </div>
+                                    <div>
+                                        <p>Je cherche quelqu'un de disponible sur la semaine du 14/08/2018 au 20/08/2018 pour garder ma fille Lila et mon garçon Diego de 8h30 à 18h</p>
+                                    </div>
+                                    <Button className="btn btn-success">En savoir plus</Button>
                                 </div>
                             </div>
-                        </div>
-                        {/* DEMANDE 3 */}
-                        <div class="container-fluid backred demande">
-                            <h4>Offre 3</h4>
-                            <div class="row">
-                                <div class="col">
-                                    <p> Description</p>
-                                </div>
-                                <div class="col">
-                                    <p> Demandeur(se)</p>
+                            <div class="row offres-box">
+                                <div className="col-sm-2 offres-demandeur">
+                                    <a> Demandeur(se)</a>
                                     <img src={Profil} />
-                                    <a> David</a>
+                                    <p><b>David</b></p>
+                                    <p>Souèts: <b><a id="SouetsUserNb3">500</a></b></p>
+                                </div>
+                                <div class="col-sm-7 offres-text">
+                                    <div className="offres-title">
+                                        <p>Garde d'enfants</p>
+                                    </div>
+                                    <div>
+                                        <p>Je cherche quelqu'un de disponible sur la semaine du 14/08/2018 au 20/08/2018 pour garder ma fille Lila et mon garçon Diego de 8h30 à 18h</p>
+                                    </div>
+                                    <Button className="btn btn-success">En savoir plus</Button>
                                 </div>
                             </div>
-                        </div>
-                        {/* DEMANDE 4 */}
-                        <div class="container-fluid backred demande">
-                            <h4>Offre 4</h4>
-                            <div class="row">
-                                <div class="col">
-                                    <p> Description</p>
-                                </div>
-                                <div class="col">
-                                    <p> Demandeur(se)</p>
+                            <div class="row offres-box">
+                                <div className="col-sm-2 offres-demandeur">
+                                    <a> Demandeur(se)</a>
                                     <img src={Profil} />
-                                    <a> Maxime</a>
+                                    <p><b>Cecile</b></p>
+                                    <p>Souèts: <b><a id="SouetsUserNb4">-1000</a></b></p>
+                                </div>
+                                <div class="col-sm-7 offres-text">
+                                    <div className="offres-title">
+                                        <p>Garde d'enfants</p>
+                                    </div>
+                                    <div>
+                                        <p>Je cherche quelqu'un de disponible sur la semaine du 14/08/2018 au 20/08/2018 pour garder ma fille Lila et mon garçon Diego de 8h30 à 18h</p>
+                                    </div>
+                                    <Button className="btn btn-success">En savoir plus</Button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        );
-    }else{
-        return <p> Vous devez être connecté. </p>
-    }
+            );
+        } else {
+            return (
+                <p> Vous devez être connecté. </p>
+            );
+        }
     }
 }

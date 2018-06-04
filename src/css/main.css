@@ -6599,6 +6599,15 @@ blockquote {
     transform: scale(1.1);
     -webkit-transform: scale(1.1); }
 
+.zoom-in-hover {
+  transition-property: transform;
+  -webkit-transition-property: transform;
+  transition-duration: .2s;
+  transition-timing-function: ease-out; }
+  .zoom-in-hover:hover {
+    transform: inset scale(1.1);
+    -webkit-transform: inset scale(1.1); }
+
 .nav-item-logo {
   max-width: 10%;
   margin-top: 10px;
@@ -6801,16 +6810,33 @@ blockquote {
   text-align: justify; }
 
 .left-menu {
-  background-color: black;
-  padding-left: 1%;
-  margin-bottom: 1%;
-  margin-left: 2%;
-  margin-right: 1%;
-  color: white; }
-  .left-menu .first-child {
-    padding-left: 3%; }
-  .left-menu .second-child {
-    padding-left: 5%; }
+  padding-top: 10px;
+  margin: 10px;
+  margin-left: 30px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #2377b9;
+  border-radius: 15px; }
+  .left-menu .categorie-title {
+    text-align: center;
+    color: #2377b9; }
+    .left-menu .categorie-title:hover {
+      font-weight: bold; }
+  .left-menu .categorie-parent {
+    padding-left: 10px;
+    font-weight: bold; }
+    .left-menu .categorie-parent .categorie-enfant {
+      border-radius: 10px;
+      padding-left: 30px;
+      font-weight: 300;
+      transition-property: background-color;
+      -webkit-transition-property: background-color;
+      transition-duration: .2s;
+      transition-timing-function: ease-out; }
+      .left-menu .categorie-parent .categorie-enfant:hover {
+        background-color: #2377b9;
+        font-weight: bold;
+        color: white; }
 
 .backblue {
   padding-left: 1%;
@@ -6894,6 +6920,7 @@ blockquote {
     position: absolute;
     top: 45%;
     /* poussé de la moitié de hauteur du référent */
+    max-height: 80%;
     transform: translateY(-50%);
     border-radius: 15px; }
   .actuality-box .actuality-title {
@@ -6907,3 +6934,98 @@ blockquote {
       font-size: 20px;
       font-family: "Agency FB";
       text-align: justify; }
+
+.banniere {
+  background-image: url("../img/theme/img-slider-selest.png");
+  margin-bottom: 10px;
+  padding-left: 0px;
+  padding: 20px 0 0 20px;
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position-y: 26%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  transition-duration: .2s; }
+  .banniere:hover {
+    filter: grayscale(30%); }
+  .banniere .banniere-chemin {
+    align-self: flex-end;
+    margin-left: 20px;
+    padding: 10px;
+    padding-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    transform: padding-bottom;
+    transition-duration: .2s;
+    transition-timing-function: ease-out; }
+    .banniere .banniere-chemin:hover {
+      padding-bottom: 25px; }
+    .banniere .banniere-chemin p {
+      color: white;
+      opacity: 100%; }
+
+.offres-box {
+  font-family: "Agency FB";
+  padding-top: 10px;
+  margin-bottom: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #2377b9;
+  border-radius: 15px;
+  transition-property: background-color;
+  -webkit-transition-property: background-color;
+  transition-duration: .2s;
+  transition-timing-function: ease-out; }
+  .offres-box:hover {
+    background-color: #ffdc50;
+    -webkit-background-color: #ffdc50; }
+  .offres-box .offres-demandeur {
+    text-align: center;
+    font-size: 15px; }
+  .offres-box .offres-title {
+    margin-left: 10px; }
+    .offres-box .offres-title p {
+      font-size: 30px; }
+  .offres-box .offres-text {
+    margin-left: 10px; }
+    .offres-box .offres-text p {
+      font-size: 20px;
+      text-align: justify; }
+  .offres-box Button {
+    position: absolute;
+    right: 25px;
+    bottom: 40px; }
+
+.demandes-box {
+  font-family: "Agency FB";
+  padding-top: 10px;
+  margin-bottom: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ffdc50;
+  border-radius: 15px;
+  transition-property: background-color;
+  -webkit-transition-property: background-color;
+  transition-duration: .2s;
+  transition-timing-function: ease-out; }
+  .demandes-box:hover {
+    background-color: #2377b9;
+    -webkit-background-color: #2377b9;
+    color: white; }
+  .demandes-box .demandes-demandeur {
+    text-align: center;
+    font-size: 15px; }
+  .demandes-box .demandes-title {
+    margin-left: 10px; }
+    .demandes-box .demandes-title p {
+      font-size: 30px; }
+  .demandes-box .demandes-text {
+    margin-left: 10px; }
+    .demandes-box .demandes-text p {
+      font-size: 20px;
+      text-align: justify; }
+  .demandes-box Button {
+    position: absolute;
+    right: 25px;
+    bottom: 40px; }

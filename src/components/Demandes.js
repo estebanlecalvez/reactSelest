@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import LeftMenu from '../components/LeftMenu';
 import Profil from '../img/theme/avatar.png';
 import Demande from '../components/Demande';
+import Selest2_0 from '../img/contenu/Actualites/selest2_0.png';
+import { Button } from 'react-bootstrap';
+
 
 export default class Demandes extends Component {
 
@@ -14,27 +17,27 @@ export default class Demandes extends Component {
         }
     }
 
-    requestCategories() {
-        fetch("https://selest-vitre.alwaysdata.net/get_categories.php", {
-            // 'method' : 'GET',
-            'headers': {
-                'Authorization': localStorage.authorization,
-            }
-        })
-            .then((response) => response.json())
-            .then((responseJson) => {
-                var text = document.getElementById("verifyText");
-                if (responseJson.success === 0) {
-                    console.log(responseJson.message);
-                } else {
-                    console.log(responseJson);
-                }
-            }
-            )
-    }
+    // requestCategories() {
+    //     fetch("https://selest-vitre.alwaysdata.net/get_categories.php", {
+    //         // 'method' : 'GET',
+    //         'headers': {
+    //             'Authorization': localStorage.authorization,
+    //         }
+    //     })
+    //         .then((response) => response.json())
+    //         .then((responseJson) => {
+    //             var text = document.getElementById("verifyText");
+    //             if (responseJson.success === 0) {
+    //                 console.log(responseJson.message);
+    //             } else {
+    //                 console.log(responseJson);
+    //             }
+    //         }
+    //         )
+    // }
 
     souetColor() {
-        for (var i = 0; i < 4; i++) {
+        for (var i = 1; i < 4; i++) {
             var nbSouetsDOM = document.getElementById("SouetsUserNb" + i);
             var nbSouets = parseInt(nbSouetsDOM.innerText);
             if (nbSouets < -1500) {
@@ -51,7 +54,6 @@ export default class Demandes extends Component {
 
     componentDidMount() {
         console.log(localStorage.Authorization);
-        this.requestCategories();
         if (this.isConnected()) {
 
             this.souetColor();
@@ -61,72 +63,84 @@ export default class Demandes extends Component {
         if (this.isConnected()) {
             return (
                 <div>
+                    <div className="banniere">
+                        <div className="banniere-chemin">
+                            <p> Accueil/Demandes</p>
+                        </div>
+                    </div>
                     <div class="row">
-                        <div class="col-3 left-menu">
+                        <div class="col-sm-2 left-menu">
                             <LeftMenu />
                         </div>
-                        <div class="col backblue">
-                            <p>LISTE DES DEMANDES COMPONENT</p>
-                            <p> scss : components/list.scss</p>
-                            {/* DEMANDE 1 */}
-                            <div class="container-fluid backred demande">
-                                <Link to="/demande"><h4>Demande 1</h4></Link>
-                                <div class="row">
-                                    <div class="col">
-                                        <p> Description</p>
+                        {/* DEMANDE 1 */}
+                        <div class="col-8">
+                            <div class="row demandes-box">
+                                <div className="col-sm-2 demandes-demandeur">
+                                    <p> Demandeur(se)</p>
+                                    <img src={Profil} />
+                                    <p><b> Maxime</b></p>
+                                    <p>Souèts: <b><a id="SouetsUserNb1">-1501</a></b></p>
+                                </div>
+                                <div class="col-sm-7 demandes-text">
+                                    <div className="demandes-title">
+                                        <p>Garde d'enfants</p>
                                     </div>
-                                    <div class="col">
-                                        <p> Demandeur(se)</p>
-                                        <img src={Profil} />
-                                        <a> Esteban</a>
-                                        <p>Souèts possédés :  <b><a id="SouetsUserNb0">-300</a></b></p>
+                                    <div>
+                                        <p>Je cherche quelqu'un de disponible sur la semaine du 14/08/2018 au 20/08/2018 pour garder ma fille Lila et mon garçon Diego de 8h30 à 18h</p>
                                     </div>
+                                    <Button className="btn btn-success">En savoir plus</Button>
                                 </div>
                             </div>
-                            {/* DEMANDE 2 */}
-                            <div class="container-fluid backred demande">
-                                <h4>Demande 2</h4>
-                                <div class="row">
-                                    <div class="col">
-                                        <p> Description</p>
-                                    </div>
-                                    <div class="col">
-                                        <p> Demandeur(se)</p>
-                                        <img src={Profil} />
-                                        <a> Joey</a>
-                                        <p>Souèts possédés :  <b><a id="SouetsUserNb1">0</a></b></p>
 
+                            <div class="row demandes-box">
+                                <div className="col-sm-2 demandes-demandeur">
+                                    <a> Demandeur(se)</a>
+                                    <img src={Profil} />
+                                    <p><b>Esteban</b></p>
+                                    <p>Souèts: <b><a id="SouetsUserNb2">0</a></b></p>
+                                </div>
+                                <div class="col-sm-7 demandes-text">
+                                    <div className="demandes-title">
+                                        <p>Garde d'enfants</p>
                                     </div>
+                                    <div>
+                                        <p>Je cherche quelqu'un de disponible sur la semaine du 14/08/2018 au 20/08/2018 pour garder ma fille Lila et mon garçon Diego de 8h30 à 18h</p>
+                                    </div>
+                                    <Button className="btn btn-success">En savoir plus</Button>
                                 </div>
                             </div>
-                            {/* DEMANDE 3 */}
-                            <div class="container-fluid backred demande">
-                                <h4>Demande 3</h4>
-                                <div class="row">
-                                    <div class="col">
-                                        <p> Description</p>
+                            <div class="row demandes-box">
+                                <div className="col-sm-2 demandes-demandeur">
+                                    <a> Demandeur(se)</a>
+                                    <img src={Profil} />
+                                    <p><b>David</b></p>
+                                    <p>Souèts: <b><a id="SouetsUserNb3">500</a></b></p>
+                                </div>
+                                <div class="col-sm-7 demandes-text">
+                                    <div className="demandes-title">
+                                        <p>Garde d'enfants</p>
                                     </div>
-                                    <div class="col">
-                                        <p> Demandeur(se)</p>
-                                        <img src={Profil} />
-                                        <a> David</a>
-                                        <p>Souèts possédés :  <b><a id="SouetsUserNb2">1500</a></b></p>
+                                    <div>
+                                        <p>Je cherche quelqu'un de disponible sur la semaine du 14/08/2018 au 20/08/2018 pour garder ma fille Lila et mon garçon Diego de 8h30 à 18h</p>
                                     </div>
+                                    <Button className="btn btn-success">En savoir plus</Button>
                                 </div>
                             </div>
-                            {/* DEMANDE 4 */}
-                            <div class="container-fluid backred demande">
-                                <h4>Demande 4</h4>
-                                <div class="row">
-                                    <div class="col">
-                                        <p> Description</p>
+                            <div class="row demandes-box">
+                                <div className="col-sm-2 demandes-demandeur">
+                                    <a> Demandeur(se)</a>
+                                    <img src={Profil} />
+                                    <p><b>Cecile</b></p>
+                                    <p>Souèts: <b><a id="SouetsUserNb4">-1000</a></b></p>
+                                </div>
+                                <div class="col-sm-7 demandes-text">
+                                    <div className="demandes-title">
+                                        <p>Garde d'enfants</p>
                                     </div>
-                                    <div class="col">
-                                        <p> Demandeur(se)</p>
-                                        <img src={Profil} />
-                                        <a> Maxime</a>
-                                        <p>Souèts possédés :  <b><a id="SouetsUserNb3">-1501</a></b></p>
+                                    <div>
+                                        <p>Je cherche quelqu'un de disponible sur la semaine du 14/08/2018 au 20/08/2018 pour garder ma fille Lila et mon garçon Diego de 8h30 à 18h</p>
                                     </div>
+                                    <Button className="btn btn-success">En savoir plus</Button>
                                 </div>
                             </div>
                         </div>

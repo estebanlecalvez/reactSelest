@@ -13,6 +13,17 @@
     }
 }
 
+.zoom-in-hover{
+    transition-property: transform;
+    -webkit-transition-property: transform;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+    &:hover {  
+        transform:inset scale(1.1);
+        -webkit-transform:inset scale(1.1);
+}
+}
+
 .nav-item-logo{
     max-width:10%;
     margin-top:10px;
