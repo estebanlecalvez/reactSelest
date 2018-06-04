@@ -4,18 +4,15 @@
   margin: auto;
   margin-top: auto;
   margin-top: 15px;
-}
-@media screen and (min-width:768px){
-  .logo{
+  @media screen and (min-width:768px){
     width: 100%;
     margin-bottom: 15px;
   }
-}
-@media screen and (min-width:1200px){
-  .logo{
-    width:80%;
-    margin-bottom: 15px;
+  @media screen and (min-width:1200px) {
+    width: 80%;
   }
+}
+
   .top-menu{
     margin:auto;
   }
@@ -27,16 +24,6 @@
      color: #ffdd50;
      border-radius: 20px;
    }
-  .btn-menu-selest:active{
-    background-color: #1a77b9;
-    color: #ffdd50;
-    border-radius: 5px;
-  }
-  .btn-menu-selest:focus{
-    background-color: #1a77b9;
-    color: #ffdd50;
-    border-radius: 5px;
-  }
 
 
 
@@ -53,6 +40,5 @@
   //  margin-left: -2px;
   //  background: #de0027;
   //}
-}
 
 
