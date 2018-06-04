@@ -73,24 +73,18 @@ export default class App extends Component {
                         </div>
                     </div>
                 </section>
-                <section className="zone-pub">
-                    <div>
-                        <h2 className="txt-service-centre">pratique, économique, solidaire</h2>
-                    </div>
-                </section>
+                {/*<section className="zone-pub">*/}
+                    {/*<div>*/}
+                        {/*<h2 className="txt-service-centre">pratique, économique, solidaire</h2>*/}
+                    {/*</div>*/}
+                {/*</section>*/}
                 <section className="zone-marche">
                     <div className="container">
                         <h2>Comment ça marche.</h2>
                         <div className="row">
-                            <div className="col">
-                                <p>Je poste ma demande</p>
-                            </div>
-                            <div className="col">
-                                <p>Quelqu'un me repond</p>
-                            </div>
-                            <div className="col">
-                                <p>Le service est rendu</p>
-                            </div>
+                            <div class="img-zone-marche-left"></div>
+                            <div class="img-zone-marche-centre"></div>
+                            <div class="img-zone-marche-right"></div>
                         </div>
                     </div>
                 </section>
