@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
-import LeftMenu from '../components/LeftMenu';
-import Profil from '../img/theme/avatar.png';
-import Demande from '../components/Demande';
-import Selest2_0 from '../img/contenu/Actualites/selest2_0.png';
+import LeftMenu from '../../components/LeftMenu';
+import Profil from '../../img/theme/avatar.png';
+import Demande from '../../components/Demande';
+import Selest2_0 from '../../img/contenu/Actualites/selest2_0.png';
 import { Button } from 'react-bootstrap';
 
 
-export default class Demandes extends Component {
+export default class MesDemandes extends Component {
 
     isConnected() {
         if (typeof localStorage.Authorization != "undefined") {

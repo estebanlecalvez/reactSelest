@@ -18,8 +18,10 @@ import logo from '../img/theme/logo.png';
 import OthersProfile from '../components/OthersProfile';
 import HowItWorks from '../components/HowItWorks';
 import LogoutButton from '../components/LogoutButton';
-import MonCompte from '../components/MonCompte';
+import MonCompte from '../components/user/MonCompte';
 import profilImg from '../img/contenu/photoFemme.jpg';
+import MesOffres from '../components/user/MesOffres';
+import MesDemandes from '../components/user/MesDemandes';
 
 export default class Header extends Component {
 
@@ -50,8 +52,8 @@ export default class Header extends Component {
                                             <a><img src={profilImg} className="imgHeader" /></a>
                                             <div class="dropdown-content">
                                                 <Link to="mon_compte"><p>Editer mon profil.</p></Link>
-                                                <Link to="mon_compte"><p>Voir mes demandes.</p></Link>
-                                                <Link to="mon_compte"><p>Voir mes offres.</p></Link>
+                                                <Link to="mes_demandes"><p>Mes demandes</p></Link>
+                                                <Link to="mes_offres"><p>Mes offres</p></Link>
                                                 <p>Mes souets : <a id="souetUser">12</a></p>
                                                 <Link to="parametre_compte"><p>Paramètres</p></Link>
                                                 <hr />
@@ -105,6 +107,8 @@ export default class Header extends Component {
                         <Route path="/offre" component={Offre} />
                         <Route path="/messages" component={Messagerie} />
                         <Route path="/profil" component={OthersProfile} />
+                        <Route path="/mes_demandes" component={MesDemandes} />
+                        <Route path="/mes_offres" component={MesOffres} />
                         <Route path="/comment_ca_marche" component={HowItWorks} />
                         <Route path="/mon_compte" component={MonCompte} />
                     </div>
@@ -170,7 +174,7 @@ export default class Header extends Component {
                         <Route path="/connexion" component={Connexion} />
                         <Route path="/apropos" component={About} />
                         <Route path="/comment_ca_marche" component={HowItWorks} />
-                        <Route path="/actualites" component={Actualites}/>
+                        <Route path="/actualites" component={Actualites} />
 
                     </div>
                 </Router>

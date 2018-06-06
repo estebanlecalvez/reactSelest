@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import { Button } from 'reactstrap';
-import positionLogo from '../img/contenu/positionLogo.png';
-
-import LeftMenu from '../components/LeftMenu';
-import Photo from '../img/contenu/photoFemme.jpg';
+import positionLogo from '../../img/contenu/positionLogo.png';
+import LeftMenu from '../../components/LeftMenu';
+import Photo from '../../img/contenu/photoFemme.jpg';
 
 export default class MonCompte extends Component {
     render() {

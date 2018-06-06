@@ -1,38 +1,42 @@
-.actuality-box{
+.demandes-box{
+    font-family:"Agency FB";
     padding-top:10px;
     margin-bottom:20px;
     border-style:solid;
-    border-width:1px;
+    border-width:2px;
+    border-color:#ffdc50;
     border-radius: 15px;
     transition-property: background-color;
     -webkit-transition-property: background-color;
     transition-duration: .2s;
     transition-timing-function: ease-out;
     &:hover{
-        background-color:$lightAqua;
-        -webkit-background-color:$lightAqua;
+        background-color:#2377b9;
+        -webkit-background-color:#2377b9;
+        color:white;
     }
-    .actualite-img{
-        position: absolute;
-        top: 45%; /* poussé de la moitié de hauteur du référent */
-        max-height:80%;
-        transform: translateY(-50%);   
-        border-radius:15px;
+    .demandes-demandeur{
+        text-align:center;
+        font-size:15px;
     }
-    .actuality-title{
+    .demandes-title{
         margin-left:10px;
         p{
             font-size:30px;
-            font-family:"Agency FB";
         }
     }
-    .actuality-text{
+    .demandes-text{
         margin-left:10px;
         p{
             font-size:20px;
-            font-family:"Agency FB";
             text-align:justify;
         }
     }
+    Button{
+        position: absolute;
+        right: 25px;
+        bottom: 40px;
+    }
 }
+
 

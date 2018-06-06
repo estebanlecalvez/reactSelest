@@ -37,7 +37,7 @@ export default class LeftMenu extends Component {
         //       "Cache-Control": "no-cache"
         //     }
         //   }
-          
+
         //   $.ajax(settings).done(function (response) {
         //     console.log(response);
         //   });
@@ -61,13 +61,13 @@ export default class LeftMenu extends Component {
         request.get({
             url: 'https://api.some-server.com/',
             headerData: [
-                                {
-                                    "key": "token",
-                                    "value": localStorage.token,
-                                    "description": "",
-                                    "enabled": true
-                                }
-                            ]
+                {
+                    "key": "token",
+                    "value": localStorage.token,
+                    "description": "",
+                    "enabled": true
+                }
+            ]
         });
 
         // var settings = {
@@ -84,7 +84,7 @@ export default class LeftMenu extends Component {
         //         }
         //     ]
         //   }
-          
+
         //   $.ajax(settings).done(function (response) {
         //     console.log(response);
         //   });
@@ -97,8 +97,29 @@ export default class LeftMenu extends Component {
 
     render() {
         return (
-            <div className="left-menu" id="leftMenu">
+            <div id="leftMenu">
+                <div className="categorie-title">
+                    <p>Categories</p>
+                </div>
+                <div className="categorie-parent">
+                    <p>Parent</p>
+                    <div className="categorie-enfant">
+                        <p>Enfant</p>
+                    </div>
+                    <div className="categorie-enfant">
+                        <p>Enfant</p>
+                    </div>
+                    <div className="categorie-enfant">
+                        <p>Enfant</p>
+                    </div>
+                    <div className="categorie-enfant">
+                        <p>Enfant</p>
+                    </div>
+                    <div className="categorie-enfant">
+                        <p>Enfant</p>
+                    </div>
 
+                </div>
             </div>
         );
     }

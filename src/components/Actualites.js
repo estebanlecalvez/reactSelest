@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Selest2_0 from '../img/contenu/Actualites/selest2_0.png';
 import ReuMardi from '../img/contenu/Actualites/reu_mardi.jpg';
+import Banniere from '../img/theme/img-slider-selest.png';
+
 
 
 export default class Actualites extends Component {
@@ -8,14 +10,17 @@ export default class Actualites extends Component {
         return (
             <div>
                 <div className="row">
-                    <div class="col-2"></div>
-                    <h3>Actualites</h3>
+                    <div className="banniere">
+                        <div className="banniere-chemin">
+                            <p> Accueil/Actualites</p>
+                        </div>
+                    </div>
                 </div>
                 <div className="row">
-                    <div class="col-2"></div>
-                    <div class="col-9">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-9">
                         <div class="row actuality-box">
-                            <div class=" col-2 ">
+                            <div class=" col-sm-2 ">
                                 <img src={Selest2_0} className="actualite-img" />
                             </div>
                             <div class="col">
@@ -58,18 +63,18 @@ et en plus, comme c'est la saison des confitures,
 on vous propose un échange de confiture maison qu'on fera en fin de réunion.
 
 et comme d'habitude, chacun peut amener de quoi boire ou grignoter pour terminer par un moment sympa !! (pensez à vos gobelets réutilisables !!</p>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
                 </div>
 
 
+            </div>
 
 
-                );
-            }
+
+
+        );
+    }
 }
