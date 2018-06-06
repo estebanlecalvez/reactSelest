@@ -7,7 +7,7 @@ export default class Footer extends Component {
                 <div className="footer">
                     <div className="container">
                         <div className="footer_grids">
-                            <h2 className="title-footer">Reseau voisinage</h2>
+                            <h2 className="title-footer"></h2>
                             <div className="block-footer col-md-4 col-sm-6">
                                 <ul className="list1">
                                     <li><a title="réseau social" href="#">A propos</a></li>

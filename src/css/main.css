@@ -6441,9 +6441,9 @@ blockquote {
     font-weight: 400; }
 
 .footer {
-  background-color: #c6c8ca;
+  background-color: #ffffff;
   height: 550px;
-  color: #ffffff;
+  color: #000;
   margin-top: -20px; }
 
 .footer h2 {
@@ -6710,7 +6710,7 @@ blockquote {
       height: 160px; } }
   @media screen and (min-width: 1170px) {
     .zone-marche .img-zone-marche {
-      height: 242px; } }
+      height: 272px; } }
 
 .titre-zone-march {
   margin: 0px; }
@@ -6727,6 +6727,22 @@ blockquote {
     right: 10%;
     top: 20%;
     height: 260px; } }
+
+.zone-notre-service {
+  background-color: #cec8da;
+  background-size: cover;
+  text-align: center;
+  color: #000;
+  margin-top: -20px; }
+  @media screen and (min-width: 768px) {
+    .zone-notre-service .img-zone-service {
+      background-image: url("../../src/img/img-servic.png");
+      background-size: cover;
+      width: 100%;
+      height: 160px; } }
+  @media screen and (min-width: 1170px) {
+    .zone-notre-service .img-zone-service {
+      height: 390px; } }
 
 .titre-avantage {
   text-align: center;
