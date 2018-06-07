@@ -6441,35 +6441,19 @@ blockquote {
     font-weight: 300; }
 
 .footer-selest {
-  text-align: justify;
   background-color: #e2dde4; }
-  .footer-selest .footer-header {
-    padding-top: 10px;
-    background: linear-gradient(white, #e2dde4); }
   .footer-selest h3 {
-    font-size: 25px;
-    font-family: "Agency FB";
-    padding-bottom: 10px; }
-  .footer-selest .menu {
-    text-align: left;
-    margin-top: 70px; }
-    .footer-selest .menu ul {
-      list-style: none; }
-  .footer-selest .reseaux-sociaux-selest ul {
-    list-style: none; }
-  .footer-selest p {
-    font-size: 20px;
-    font-family: "Agency FB"; }
-  .footer-selest .links {
-    padding-top: 30px; }
-    .footer-selest .links li {
-      padding-bottom: 15px;
-      font-family: "Agency FB"; }
-      .footer-selest .links li a {
-        color: #746C91;
-        font-size: 20px; }
-        .footer-selest .links li a:hover {
-          color: #3b3457; }
+    font-size: 20px; }
+
+.footer {
+  background-color: white;
+  height: 550px;
+  color: black;
+  margin-top: 20px; }
+
+.footer h2 {
+  text-align: center;
+  padding-bottom: 10px; }
 
 @media screen and (min-width: 768px) {
   .footer {
@@ -6507,6 +6491,13 @@ blockquote {
 .txt-end-page {
   position: relative;
   top: 10px; }
+
+.menu-footer {
+  text-align: center;
+  margin-top: 70px;
+  padding-right: 80px; }
+  .menu-footer ul {
+    list-style: none; }
 
 body {
   overflow-x: hidden; }
