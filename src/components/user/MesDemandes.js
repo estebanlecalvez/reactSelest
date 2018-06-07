@@ -10,7 +10,7 @@ import { Button } from 'react-bootstrap';
 export default class MesDemandes extends Component {
 
     isConnected() {
-        if (typeof localStorage.Authorization != "undefined") {
+        if (typeof localStorage.token != "undefined") {
             return true;
         } else {
             return false;
@@ -53,7 +53,7 @@ export default class MesDemandes extends Component {
     }
 
     componentDidMount() {
-        console.log(localStorage.Authorization);
+        console.log(localStorage.authorization);
         if (this.isConnected()) {
 
             this.souetColor();

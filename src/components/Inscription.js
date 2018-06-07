@@ -1,6 +1,6 @@
 import React, { closeStyle } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import logoSmall from '../img/theme/logo_small.png';
+import logo from '../img/theme/logo-no-text-white-border.png';
 import validate from '../img/validate.png';
 import unvalidate from '../img/unvalidate.png';
 
@@ -115,7 +115,12 @@ export default class Inscription extends React.Component {
                 <div>
                     <a className="nav-link disabled btn-top-right" style={{ color: this.props.style }} onClick={this.toggle} >{this.props.buttonLabel}</a>
                     <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-                        <ModalHeader style={{ color: '#2377b9' }} toggle={this.toggle}><img src={logoSmall} /> Devenez Sel'estin(e) dès maintenant !</ModalHeader>
+                        <ModalHeader  toggle={this.toggle} className="modal-header">
+                            <div className=" container zoom-hover">
+                                <img src={logo} className="medium-icon space zoom-hover" />
+                                Devenez Sel'estin(e) dès maintenant !
+                            </div>
+                        </ModalHeader>
                         <ModalBody>
                             <p style={{ color: '#2377b9' }}>Pour faire parti de la communauté du Sel'est et participer aux echanges, tu dois d'abord te préinscrire en remplissant le formulaire ci-dessous:</p>
                             <p style={{ color: '#2377b9' }}>* Champs obligatoires</p>

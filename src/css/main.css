@@ -6441,13 +6441,14 @@ blockquote {
     font-weight: 400; }
 
 .footer {
-  background-color: #ffffff;
+  background-color: white;
   height: 550px;
-  color: #000;
-  margin-top: -20px; }
+  color: black;
+  margin-top: 20px; }
 
 .footer h2 {
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 10px; }
 
 @media screen and (min-width: 768px) {
   .footer {
@@ -6590,6 +6591,12 @@ blockquote {
 .small-icon {
   max-width: 20px; }
 
+.medium-icon {
+  max-width: 50px; }
+
+.space {
+  margin-right: 15px; }
+
 .zoom-hover {
   transition-property: transform;
   -webkit-transition-property: transform;
@@ -6663,7 +6670,7 @@ blockquote {
 
 .zone-service {
   text-align: center;
-  background-color: #746c91;
+  background-color: #8f88aa;
   margin-top: -20px; }
 
 .btn-service a {
@@ -6707,10 +6714,12 @@ blockquote {
     left: 0; }
 
 .zone-marche {
-  background-color: #e2dde4;
+  background: linear-gradient(#8f88aa, white);
   background-size: cover;
   text-align: center;
-  color: #000; }
+  padding-top: 50px; }
+  .zone-marche h2 {
+    color: white; }
   @media screen and (min-width: 768px) {
     .zone-marche .img-zone-marche {
       background-image: url("../../src/img/img-zone-marche.png");
@@ -6719,7 +6728,7 @@ blockquote {
       height: 160px; } }
   @media screen and (min-width: 1170px) {
     .zone-marche .img-zone-marche {
-      height: 272px; } }
+      height: 242px; } }
 
 .titre-zone-march {
   margin: 0px; }
@@ -6736,22 +6745,6 @@ blockquote {
     right: 10%;
     top: 20%;
     height: 260px; } }
-
-.zone-notre-service {
-  background-color: #cec8da;
-  background-size: cover;
-  text-align: center;
-  color: #000;
-  margin-top: -20px; }
-  @media screen and (min-width: 768px) {
-    .zone-notre-service .img-zone-service {
-      background-image: url("../../src/img/img-servic.png");
-      background-size: cover;
-      width: 100%;
-      height: 160px; } }
-  @media screen and (min-width: 1170px) {
-    .zone-notre-service .img-zone-service {
-      height: 390px; } }
 
 .titre-avantage {
   text-align: center;
@@ -6823,10 +6816,27 @@ blockquote {
   text-align: center; }
 
 .modal-header {
-  background-color: #f9f9fa; }
+  background-color: #f9f9fa;
+  color: #2377b9;
+  transition-duration: .2s;
+  transition-timing-function: ease-out; }
+  .modal-header:hover {
+    background: linear-gradient(#a39bcc, #f9f9fa);
+    color: white; }
+  .modal-header img {
+    border-radius: 50%;
+    box-shadow: 0 0 20px white; }
 
 .modal-footer {
-  background-color: #f9f9fa; }
+  background-color: #f9f9fa;
+  background-color: #f9f9fa;
+  color: #2377b9;
+  transition-property: background-color;
+  transition-duration: .5s;
+  transition-timing-function: ease-out; }
+  .modal-footer:hover {
+    background-color: #c1bbdf;
+    color: white; }
 
 .modal-form {
   text-align: justify; }

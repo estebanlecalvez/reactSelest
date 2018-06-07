@@ -10,31 +10,56 @@ import { Button } from 'react-bootstrap';
 export default class Demandes extends Component {
 
     isConnected() {
-        if (typeof localStorage.Authorization != "undefined") {
+        if (typeof sessionStorage.token != "undefined") {
             return true;
         } else {
             return false;
         }
     }
 
-    // requestCategories() {
-    //     fetch("https://selest-vitre.alwaysdata.net/get_categories.php", {
-    //         // 'method' : 'GET',
-    //         'headers': {
-    //             'Authorization': localStorage.authorization,
-    //         }
-    //     })
-    //         .then((response) => response.json())
-    //         .then((responseJson) => {
-    //             var text = document.getElementById("verifyText");
-    //             if (responseJson.success === 0) {
-    //                 console.log(responseJson.message);
-    //             } else {
-    //                 console.log(responseJson);
-    //             }
-    //         }
-    //         )
-    // }
+    requestCategories() {
+        /***************** authorization dans le header ***************/
+        // fetch("https://selest-vitre.alwaysdata.net/get_categories.php", {
+        //     'method': 'GET',
+        //     'headers': {
+        //         'authorization': localStorage.authorization,
+        //     }
+        // })
+        //     .then((response) => response.json())
+        //     .then((responseJson) => {
+        //         var text = document.getElementById("verifyText");
+        //         //Si la reponse est mauvaise
+        //         if (responseJson.success === 0) {
+        //             //On affiche le message renvoyé dans le json
+        //             console.log(responseJson.message);
+        //         } else {
+        //             //Sinon, on affiche tout le json
+        //             console.log(responseJson);
+        //         }
+        //     }
+        //     )
+
+        /*******authorization en parametre ***********/
+
+        var data = new FormData();
+        data.append("token", sessionStorage.token);
+        console.log(sessionStorage.token);
+        fetch("https://selest-vitre.alwaysdata.net/get_categories.php?token=" + sessionStorage.token, {
+            'method': 'GET'
+        })
+            .then((response) => response.json())
+            .then((responseJson) => {
+                //Si la reponse est mauvaise
+                if (responseJson.success == 0) {
+                    //On affiche le message renvoyé dans le json
+                    console.log(responseJson.message);
+                } else {
+                    //Sinon, on affiche tout le json
+                    console.log(responseJson);
+                }
+            }
+            )
+    }
 
     souetColor() {
         for (var i = 1; i < 4; i++) {
@@ -53,9 +78,8 @@ export default class Demandes extends Component {
     }
 
     componentDidMount() {
-        console.log(localStorage.Authorization);
         if (this.isConnected()) {
-
+            this.requestCategories();
             this.souetColor();
         }
     }

@@ -9,7 +9,7 @@ import { Button } from 'react-bootstrap';
 export default class Offres extends Component {
 
     isConnected() {
-        if (typeof localStorage.Authorization != "undefined") {
+        if (typeof localStorage.token != "undefined") {
             return true;
         } else {
             return false;

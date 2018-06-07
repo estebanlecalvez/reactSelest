@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Home from '../components/Home'; import HomeLogo from '../img/theme/home_logo.png';
 import FbLogo from '../img/theme/fb.png';
+import logo from '../img/theme/logo.png';
 import Messagerie from '../components/Messagerie';
 import Inscription from '../components/Inscription';
 import Connexion from '../components/Connexion';
@@ -14,7 +15,6 @@ import Faq from '../components/Faq';
 import Actualites from '../components/Actualites';
 import Aide from '../components/Aide';
 import Profil from '../components/OthersProfile';
-import logo from '../img/theme/logo.png';
 import OthersProfile from '../components/OthersProfile';
 import HowItWorks from '../components/HowItWorks';
 import LogoutButton from '../components/LogoutButton';
@@ -26,7 +26,7 @@ import MesDemandes from '../components/user/MesDemandes';
 export default class Header extends Component {
 
     isConnected() {
-        if (typeof localStorage.Authorization != "undefined") {
+        if (typeof sessionStorage.token != "undefined") {
             return true;
         } else {
             return false;

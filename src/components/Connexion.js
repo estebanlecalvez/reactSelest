@@ -1,6 +1,6 @@
 import React, { closeStyle } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import logoSmall from '../img/theme/logo_small.png';
+import logo from '../img/theme/logo-no-text-white-border.png';
 import Inscription from './Inscription';
 import request from 'request';
 
@@ -9,7 +9,7 @@ export default class Connexion extends React.Component {
 
     //TODO
     isConnected() {
-        if (typeof localStorage.Authorization !== "undefined") {
+        if (typeof sessionStorage.token !== "undefined") {
             return true;
         } else {
             return false;
@@ -17,10 +17,13 @@ export default class Connexion extends React.Component {
     }
 
     verifyBeforeSend = event => {
+        console.log("verifyBeforeSend (first of the chain)");
         this.requestBDDForUser();
     }
 
     requestBDDForUser() {
+        console.log("requestBDDForUser (second of the chain)");
+
         var id = document.getElementById("id").value;
         var mdp = document.getElementById("mdp").value;
         var verify = document.getElementById("verifyText");
@@ -39,10 +42,11 @@ export default class Connexion extends React.Component {
                 var text = document.getElementById("verifyText");
                 if (responseJson.success === 0) {
                     text.innerHTML = "<p style='color:red'>" + responseJson.message + "</p>";
-
                 } else {
-                    var Authorization = responseJson.token;
-                    localStorage.Authorization = Authorization;
+                    text.innerHTML = "<p style='color:green'>Vous êtes connecté</p>";
+                    var token = responseJson.token;
+                    sessionStorage.token = token;
+                    console.log(sessionStorage.token);
                     window.location.reload();
                 }
             })
@@ -69,7 +73,11 @@ export default class Connexion extends React.Component {
                 <div>
                     <a className="nav-link disabled btn-top-right" onClick={this.toggle}>{this.props.buttonLabel}Connexion</a>
                     <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-                        <ModalHeader toggle={this.toggle} style={{ color: '#2377b9' }}><img src={logoSmall} /> Devenez Sel'estin(e) dès maintenant !</ModalHeader>
+                        <ModalHeader toggle={this.toggle} className="modal-header">
+                            <div className="container zoom-hover"><img src={logo} className="medium-icon space zoom-hover" />
+                                Bonjour Sélestin(e) !
+                            </div>
+                        </ModalHeader>
                         <ModalBody>
                             <form>
                                 <label className="label-80">Identifiant*

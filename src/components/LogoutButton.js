@@ -8,7 +8,7 @@ import unvalidate from '../img/unvalidate.png';
 export default class LogoutButton extends React.Component {
     //TODO
     isConnected() {
-        if (typeof localStorage.Authorization != "undefined") {
+        if (typeof sessionStorage.token != "undefined") {
             return true;
         } else {
             return false;
@@ -16,7 +16,7 @@ export default class LogoutButton extends React.Component {
     }
 
     deconnect() {
-        localStorage.removeItem("Authorization");
+        sessionStorage.removeItem("token");
         window.location.reload();
     }
 

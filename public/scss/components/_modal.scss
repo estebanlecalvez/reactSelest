@@ -2,10 +2,30 @@ $lightgrey:#f9f9fa;
 
 .modal-header{
     background-color: $lightgrey;
+    color: #2377b9;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+    &:hover{
+        background: linear-gradient(#a39bcc , $lightgrey );
+        color:white;
+    }
+    img{
+        border-radius: 50%;
+        box-shadow: 0 0 20px rgb(255, 255, 255);
+    }
 }
 
 .modal-footer{
     background-color: $lightgrey;
+    background-color: $lightgrey;
+    color: #2377b9;
+    transition-property:background-color;
+    transition-duration: .5s;
+    transition-timing-function: ease-out;
+    &:hover{
+        background-color:#c1bbdf;
+        color:white;
+    }
 }
 
 .modal-form{

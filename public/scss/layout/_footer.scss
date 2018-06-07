@@ -1,11 +1,12 @@
 .footer{
-  background-color: #ffffff;
+  background-color: white;
   height: 550px;
-  color: #000;
-  margin-top: -20px;
+  color: black;
+  margin-top: 20px;
 }
 .footer h2{
   text-align: center;
+  padding-bottom:10px;
 }
 @media screen and (min-width:768px){
   .footer{
