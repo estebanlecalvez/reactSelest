@@ -14,13 +14,20 @@ export default class App extends Component {
                 <div className="img-background">
                     <div className="container">
                         <div className="row">
-                            <div className="zone-txt-animation">
-                                <ul>
-                                    <li>pratique</li>
-                                    <li>économique</li>
-                                    <li>solidaire</li>
-                                </ul>
-                            </div>
+                            {/*<div className="zone-txt-animation">*/}
+                                {/*<ul>*/}
+                                    {/*<li>pratique</li>*/}
+                                    {/*<li>économique</li>*/}
+                                    {/*<li>solidaire</li>*/}
+                                {/*</ul>*/}
+                            {/*</div>*/}
+                            {/*<div id="block-block-13" class="block block-block gros-titres col-sm-6 clearfix">*/}
+                                {/*<ul><li>Crédibilité</li>*/}
+                                    {/*<li>Fiabilité</li>*/}
+                                    {/*<li>Qualité</li>*/}
+                                    {/*<li>Vérité</li>*/}
+                                {/*</ul>*/}
+                            {/*</div>*/}
                             {/* <div className="zone-avantage">
                                 <strong className="titre-avantage">Les Avantages</strong>
                                 <ul>                                                        <li><p>Lorem ipsum dolor sit amet</p></li>
