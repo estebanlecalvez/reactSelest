@@ -17,7 +17,7 @@ export default class LogoutButton extends React.Component {
 
     deconnect() {
         sessionStorage.removeItem("token");
-        window.location.reload();
+        window.location.replace("/");
     }
 
     constructor(props) {
