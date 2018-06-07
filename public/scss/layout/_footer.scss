@@ -1,3 +1,8 @@
+.footer-selest{
+  h3{
+    font-size: 20px;
+  }
+}
 .footer{
   background-color: white;
   height: 550px;
@@ -35,12 +40,24 @@
   background-color: #818182;
 }
 .pied-page{
-  background-color: #51767f;
+  background-color: #746C91;
   height: 45px;
   color: #ffffff;
   text-align: center;
+  p{
+    margin: auto;
+    padding: 8px;
+  }
 }
 .txt-end-page{
   position: relative;
   top: 10px;
+}
+.menu-footer{
+  text-align: center;
+  margin-top: 70px;
+  padding-right: 80px;
+  ul{
+    list-style: none;
+  }
 }

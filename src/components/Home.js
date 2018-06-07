@@ -83,7 +83,7 @@ export default class App extends Component {
                     </section>
                     <section className="zone-notre-service">
                                 <h2>Notre service</h2>
-                                <p>Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet</p>
+                                <p>Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem<br/>ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet</p>
                                 <div class="img-zone-service"></div>
                     </section>
                  </div>

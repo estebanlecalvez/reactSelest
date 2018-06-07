@@ -9,9 +9,9 @@ export default class Footer extends Component {
                         <div className="row">
                             <div className="col-sm-4">
                                 <h3>A propos de Sel’est</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec.</p>
                             </div>
-                            <div className="col-sm-4">
+                            <div className="col-sm-4 menu-footer">
                                 <ul className="list2">
                                     <li><a title="réseau social" href="#">Demandes</a></li>
                                     <li><a title="comment utiliser" href="#">Offres</a></li>
@@ -27,6 +27,9 @@ export default class Footer extends Component {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className="pied-page">
+                    <p>Réalisé par group MyDigitalSchool</p>
                 </div>
             </div>
         );

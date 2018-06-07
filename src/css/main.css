@@ -6440,6 +6440,9 @@ blockquote {
     line-height: 160%;
     font-weight: 400; }
 
+.footer-selest h3 {
+  font-size: 20px; }
+
 .footer {
   background-color: white;
   height: 550px;
@@ -6475,14 +6478,27 @@ blockquote {
   background-color: #818182; }
 
 .pied-page {
-  background-color: #51767f;
+  background-color: #746C91;
   height: 45px;
   color: #ffffff;
   text-align: center; }
+  .pied-page p {
+    margin: auto;
+    padding: 8px; }
 
 .txt-end-page {
   position: relative;
   top: 10px; }
+
+.menu-footer {
+  text-align: center;
+  margin-top: 70px;
+  padding-right: 80px; }
+  .menu-footer ul {
+    list-style: none; }
+
+body {
+  overflow-x: hidden; }
 
 .header {
   background-color: #ffffff; }
