@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Home from '../components/Home'; import HomeLogo from '../img/theme/home_logo.png';
+import Home from '../components/Home'; 
+import HomeLogo from '../img/theme/home_logo.png';
 import FbLogo from '../img/theme/fb.png';
 import logo from '../img/theme/logo.png';
 import Messagerie from '../components/Messagerie';
@@ -84,14 +85,14 @@ export default class Header extends Component {
                                             <li className="nav-item">
                                                 <Link to="/comment_ca_marche"><a className="nav-link">Comment ça marche?</a></Link>
                                             </li>
-                                            <li className="nav-item dropdown">
-                                                <Link to="/aide"><a className="nav-link">Aide</a></Link>
-                                            </li>
                                             <li>
                                                 <a href="https://www.facebook.com/selest35/" ><img src={FbLogo} className="small-icon zoom-hover" /></a>
                                             </li>
 
                                         </ul>
+                                        <div>
+                                            <input type="button" className="btn-blue" value="Button"/>
+                                        </div>
                                     </div>
                                 </nav>
                             </div>
@@ -141,7 +142,7 @@ export default class Header extends Component {
                                 <div className="col-sm-2">
                                     <img src={logo} className="logo rotate-hover" />
                                 </div>
-                                <nav className="navbar navbar-expand-lg navbar-success col">
+                                <nav className="navbar-mobile navbar-mobile-dropdown navbar navbar-expand-lg navbar-success col">
                                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                         <ul className="navbar-nav mr-auto">
                                             <li className="nav-item">
@@ -149,9 +150,6 @@ export default class Header extends Component {
                                             </li>
                                             <li className="nav-item">
                                                 <Link to="/comment_ca_marche"><a className="nav-link">Comment ça marche?</a></Link>
-                                            </li>
-                                            <li className="nav-item dropdown">
-                                                <Link to="/aide"><a className="nav-link">Aide</a></Link>
                                             </li>
                                             <li className="nav-item dropdown">
                                                 <Link to="/faq"><a className="nav-link">Foire aux questions</a></Link>

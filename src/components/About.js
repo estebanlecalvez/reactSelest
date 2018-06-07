@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Charte from '../charte.pdf';
-import ReglementInterieur from '../reglement_interieur.pdf';
+import Charte from '../pdf/charte.pdf';
+import ReglementInterieur from '../pdf/reglement_interieur.pdf';
 import LeftMenu from '../components/LeftMenu';
 
 export default class About extends Component {

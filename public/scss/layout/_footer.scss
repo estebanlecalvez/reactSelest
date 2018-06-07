@@ -1,19 +1,60 @@
 .footer-selest{
+  text-align:justify;
+  .footer-header{
+    padding-top:10px;
+    background:linear-gradient(white,#e2dde4);
+  }
   background-color: #e2dde4;
   h3{
-    font-size: 20px;
+    font-size: 25px;
+    font-family:"Agency FB";
+    padding-bottom:10px;
+  }
+
+  .menu{
+    text-align: left;
+    margin-top: 70px;
+    ul{
+        list-style: none;
+    }
+  }
+
+  .reseaux-sociaux-selest{
+    ul{
+      list-style:none;
+    }
+  }
+  p{
+    font-size:20px;
+    font-family:"Agency FB";
+  }
+
+
+  .links{
+    padding-top:30px;
+    li{
+      padding-bottom:15px;
+      font-family:"Agency FB";
+      a{
+        color:#746C91;
+        font-size:20px;
+        &:hover{
+          color:rgb(59, 52, 87);
+        }
+      }
+    }
   }
 }
-.footer{
-  background-color: white;
-  height: 550px;
-  color: black;
-  margin-top: 20px;
-}
-.footer h2{
-  text-align: center;
-  padding-bottom:10px;
-}
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width:768px){
   .footer{
     height: 250px;
@@ -53,12 +94,4 @@
 .txt-end-page{
   position: relative;
   top: 10px;
-}
-.menu-footer{
-  text-align: center;
-  margin-top: 70px;
-  padding-right: 80px;
-  ul{
-    list-style: none;
-  }
 }

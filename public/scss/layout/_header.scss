@@ -93,9 +93,30 @@ body{
   .motor-recherche{
     top: 7px;
   }
-
 }
 
+
+/*** Version mobile <768pw **************/
+@media screen and (max-width:768px){
+  .navbar-mobile{
+    background-image: url("../img/theme/burger-menu.png");
+    position: relative;
+    display: inline-block;
+  }
+
+  .navbar-mobile-dropdown{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    max-width:300px;
+    margin-left:-75px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    text-align:center;
+    z-index: 1;
+  }
+}
 .dropdown {
   position: relative;
   display: inline-block;

@@ -1,0 +1,19 @@
+.btn-blue {
+    background: #3498db;
+    background-image: linear-gradient(to bottom, #3498db, #2699e0);
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    font-family: "Agency FB";
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    &:hover {
+        background: #3cb0fd;
+        background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+        text-decoration: none;
+    }
+  }
+  
+  
