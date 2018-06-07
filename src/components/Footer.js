@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import FbLogo from '../img/theme/fb.png';
 
 export default class Footer extends Component {
     render() {
@@ -21,9 +22,16 @@ export default class Footer extends Component {
                             </div>
                             <div className="col-sm-4">
                                 <h3>Contactez-Nous</h3>
-                                <p>Tel :</p>
-                                <p>Mail :</p>
-                                <p>Adresse :</p>
+                                <p> Tel : 0987654321<br />
+                                    Mail : selest@gmail.com<br />
+                                    Adresse : Bretagne, Vitré</p>
+                                <div className="reseaux-sociaux-selest">
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.facebook.com/selest35/" ><img src={FbLogo} className="small-icon zoom-hover" /></a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>

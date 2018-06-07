@@ -6440,8 +6440,10 @@ blockquote {
     line-height: 160%;
     font-weight: 400; }
 
-.footer-selest h3 {
-  font-size: 20px; }
+.footer-selest {
+  background-color: #e2dde4; }
+  .footer-selest h3 {
+    font-size: 20px; }
 
 .footer {
   background-color: white;
