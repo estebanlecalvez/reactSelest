@@ -11,26 +11,7 @@ export default class App extends Component {
     render() {
         return (
             <div>
-                <div className="img-background">
-                    <div className="container">
-                        <div className="row">
-                            <div className="zone-txt-animation">
-                                <ul>
-                                    <li>pratique</li>
-                                    <li>économique</li>
-                                    <li>solidaire</li>
-                                </ul>
-                            </div>
-                            {/* <div className="zone-avantage">
-                                <strong className="titre-avantage">Les Avantages</strong>
-                                <ul>                                                        <li><p>Lorem ipsum dolor sit amet</p></li>
-                                    <li><p>Lorem ipsum dolor sit amet</p></li>
-                                    <li><p>Lorem ipsum dolor sit amet</p></li>
-                                </ul>
-                            </div> */}
-                        </div>
-                    </div>
-                </div>
+                <div className="img-background-home"></div>
                 <div className="main-container">
                     <section id="service" className="zone-service">
                             <div className="section">

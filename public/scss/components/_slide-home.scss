@@ -1,17 +1,23 @@
-.img-background{
-  background-image: url("../img/img-page-accueil.png");
-  background-size: cover;
-  width: 100%;
-  height: 250px;
-  position: relative;
-  @media screen and (min-width:768px){
-      height: 550px;
-      background-position-y: 65%;
-    }
-  @media screen and (min-width:1200px){
-
-  }
+.img-background-home{
+  width:100%;
+  height:550px;
+  background-size:cover;
+  
+  background-image: 
+    url("../img/theme/banner/logo.png"),
+    url("../img/theme/banner/nuages.png"),
+    url("../img/theme/banner/background.png");
+  background-position:0px -50px, 0px -100px,0px 0px;
+  background-repeat:no-repeat,repeat,repeat,repeat;
+  background-position-y:65%;
+  animation: animate-background linear 100s infinite;
 }
+@keyframes animate-background{
+  from{ background-position:0px -50px,0px -70px,0px 0px; }
+  to{ background-position:0px -50px, -3000px -70px, 3839px 0px }
+}
+
+
 
 
 
