@@ -4,10 +4,9 @@
     background-image: 
       url("../img/theme/banner/nuages.png"),
       url("../img/theme/banner/background.png");
-    background-position:0px -300px,0px -200px;
+    background-position:0px -100px,0px -100px;
     background-repeat:repeat,repeat;
     animation: animate-banniere linear 100s infinite;
-    background-size : cover;
     display:flex;
     flex-direction: row;
     margin-bottom:50px;
@@ -30,8 +29,8 @@
     }  
   }
   @keyframes animate-banniere{
-    from{ background-position:0px -300px,0px -300px; }
-    to{ background-position: -3000px -300px, 3839px-300px }
+    from{ background-position:0px -100px,0px -100px; }
+    to{ background-position: -3000px -100px, 3000px -100px }
   }    
  
 
