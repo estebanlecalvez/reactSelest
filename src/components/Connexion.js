@@ -47,7 +47,7 @@ export default class Connexion extends React.Component {
                     var token = responseJson.token;
                     sessionStorage.token = token;
                     console.log(sessionStorage.token);
-                    window.location.reload();
+                    window.location.replace("/");
                 }
             })
     }
