@@ -11,8 +11,7 @@ export default class About extends Component {
             <div>
                 <Banniere path="A propos" />
                 <div class="row">
-                    <div class="col-3 left-menu">
-                        <LeftMenu />
+                    <div class="col-sm-2">
                     </div>
                     <div class="col">
                         <div class="container">

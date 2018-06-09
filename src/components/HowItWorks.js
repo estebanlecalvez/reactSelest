@@ -12,8 +12,7 @@ export default class HowItWorks extends Component {
             <div>
                 <Banniere path="Comment ça marche" />
                 <div class="row">
-                    <div class="col-3 left-menu">
-                        <LeftMenu />
+                    <div class="col-sm-2">
                     </div>
                     <div class="col">
                         <div class="container">

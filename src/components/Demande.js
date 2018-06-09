@@ -13,8 +13,7 @@ export default class Demande extends Component {
                 <div className="container-fluid">
 
                     <div className="row">
-                        <div class="col-3 left-menu">
-                            <LeftMenu />
+                        <div class="col-sm-2">
                         </div>
                         <div className="card col-sm-5">
                             <div className="card-body">

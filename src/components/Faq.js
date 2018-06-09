@@ -10,8 +10,8 @@ export default class Faq extends Component {
             <div>
                 <Banniere path="Foire aux questions" />
                 <div class="row">
-                    <div class="col-3 left-menu">
-                        <LeftMenu />
+                    <div class="col-sm-2">
+
                     </div>
                     <div class="col">
                         <div class="container">
