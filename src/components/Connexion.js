@@ -46,7 +46,11 @@ export default class Connexion extends React.Component {
                     text.innerHTML = "<p style='color:green'>Vous êtes connecté</p>";
                     var token = responseJson.token;
                     sessionStorage.token = token;
+                    sessionStorage.uti_id = responseJson.uti_id
+                    sessionStorage.uti_droits = responseJson.uti_droits
                     console.log(sessionStorage.token);
+                    console.log(sessionStorage.uti_id);
+                    console.log(sessionStorage.uti_droits);
                     window.location.replace("/");
                 }
             })
