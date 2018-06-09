@@ -116,12 +116,7 @@ export default class Header extends Component {
                 <Router>
                     <div className="header">
                         <div className="top-header">
-                            <div className="left-top">
-                                <form className="form-inline my-2 my-lg-0 motor-recherche">
-                                    <input className="form-control mr-sm-2" placeholder="  Recherche" aria-label="Search" type="search" />
-                                    <button className="btn btn-outline-success my-2 my-sm-0" type="submit"><span className="txt-recherche">Rechercher</span></button>
-                                </form>
-                            </div>
+                            
                             <div className="right-top" >
                                 <ul>
                                     <li className="nav-item">
