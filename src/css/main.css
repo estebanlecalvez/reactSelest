@@ -7042,7 +7042,7 @@ body {
     margin-left: 300px;
     padding: 20px;
     padding-bottom: 0;
-    background-color: rgba(24, 83, 128, 0.6);
+    background-color: rgba(75, 60, 131, 0.6);
     transform: padding-bottom;
     transition-duration: .2s;
     transition-timing-function: ease-out; }
@@ -7051,7 +7051,7 @@ body {
       border-right: 5px dotted white;
       padding-right: 50px;
       padding-left: 50px;
-      background-color: #2377b9; }
+      background-color: #746c91; }
     .banniere .banniere-chemin p {
       color: white;
       font-size: 25px;
