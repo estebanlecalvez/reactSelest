@@ -12,18 +12,23 @@
     margin-bottom:50px;
     .banniere-chemin{
         align-self:flex-end;
-        margin-left:20px;
-        padding:10px;
+        margin-left:300px;
+        padding:20px;
         padding-bottom:0;
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color:rgba(24, 83, 128, 0.6);
         transform:padding-bottom;
         transition-duration: .2s;
         transition-timing-function: ease-out;
         &:hover{
-            padding-bottom:25px;
+            border-left: 5px dotted white;
+            border-right: 5px dotted white;
+            padding-right:50px;
+            padding-left:50px;
+            background-color:rgb(35,119,185);
         }
         p{
             color: white;
+            font-size:25px;
             opacity: 100%;
         } 
     }  
