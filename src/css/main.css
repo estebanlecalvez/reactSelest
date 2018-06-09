@@ -7128,18 +7128,134 @@ body {
     right: 25px;
     bottom: 40px; }
 
-.btn-blue {
-  background: #3498db;
-  background-image: linear-gradient(to bottom, #3498db, #2699e0);
-  -webkit-border-radius: 10;
-  -moz-border-radius: 10;
-  border-radius: 10px;
-  font-family: "Agency FB";
-  color: #ffffff;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none; }
-  .btn-blue:hover {
-    background: #3cb0fd;
-    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-    text-decoration: none; }
+.btn-skew-blue {
+  width: 180px;
+  margin-top: 27px;
+  margin-left: 5px;
+  color: #2377b9;
+  background-color: white;
+  padding: 5px 0px 5px 0px;
+  border: 2px solid #c7c7c7;
+  text-transform: uppercase;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  transition: .5s;
+  font-size: 12px;
+  font-weight: bold; }
+  .btn-skew-blue:after {
+    content: '';
+    width: 0px;
+    height: 120%;
+    position: absolute;
+    left: -10%;
+    bottom: 0;
+    background: linear-gradient(to right, #2377b9 0%, #15598d 100%);
+    transform: skewX(35deg);
+    z-index: -1;
+    transition: .5s; }
+  .btn-skew-blue:hover {
+    cursor: pointer;
+    color: white; }
+  .btn-skew-blue:hover:after {
+    left: -10%;
+    width: 120%; }
+
+.btn-skew-purple {
+  width: 180px;
+  margin-top: 27px;
+  margin-left: 5px;
+  color: #746C91;
+  background-color: white;
+  padding: 5px 0px 5px 0px;
+  border: 2px solid #dddddd;
+  text-transform: uppercase;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  transition: .5s;
+  font-size: 12px;
+  font-weight: bold; }
+  .btn-skew-purple:after {
+    content: '';
+    width: 0px;
+    height: 120%;
+    position: absolute;
+    left: -10%;
+    bottom: 0;
+    background: linear-gradient(to right, #746C91 0%, #574e75 100%);
+    transform: skewX(35deg);
+    z-index: -1;
+    transition: .5s; }
+  .btn-skew-purple:hover {
+    cursor: pointer;
+    color: white; }
+  .btn-skew-purple:hover:after {
+    left: -10%;
+    width: 120%; }
+
+.btn-skew-green {
+  width: 180px;
+  margin-top: 27px;
+  margin-left: 5px;
+  color: #133913;
+  background-color: white;
+  padding: 5px 0px 5px 0px;
+  border: 2px solid #c7c7c7;
+  text-transform: uppercase;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  transition: .5s;
+  font-size: 12px;
+  font-weight: bold; }
+  .btn-skew-green:after {
+    content: '';
+    width: 0px;
+    height: 120%;
+    position: absolute;
+    left: -10%;
+    bottom: 0;
+    background: linear-gradient(to right, #a4b357 0%, #75890c 100%);
+    transform: skewX(35deg);
+    z-index: -1;
+    transition: .5s; }
+  .btn-skew-green:hover {
+    cursor: pointer;
+    color: white; }
+  .btn-skew-green:hover:after {
+    left: -10%;
+    width: 120%; }
+
+.btn-skew-red {
+  width: 180px;
+  margin-top: 27px;
+  margin-left: 5px;
+  color: #660000;
+  background-color: white;
+  padding: 5px 0px 5px 0px;
+  border: 2px solid #c7c7c7;
+  text-transform: uppercase;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  transition: .5s;
+  font-size: 12px;
+  font-weight: bold; }
+  .btn-skew-red:after {
+    content: '';
+    width: 0px;
+    height: 120%;
+    position: absolute;
+    left: -10%;
+    bottom: 0;
+    background: linear-gradient(to right, #c70000 0%, #aa0000 100%);
+    transform: skewX(35deg);
+    z-index: -1;
+    transition: .5s; }
+  .btn-skew-red:hover {
+    cursor: pointer;
+    color: white; }
+  .btn-skew-red:hover:after {
+    left: -10%;
+    width: 120%; }

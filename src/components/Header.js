@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Home from '../components/Home'; 
+import Home from '../components/Home';
 import HomeLogo from '../img/theme/home_logo.png';
 import FbLogo from '../img/theme/fb.png';
 import logo from '../img/theme/logo.png';
@@ -132,25 +132,26 @@ export default class Header extends Component {
                                 <div className="col-sm-2">
                                     <img src={logo} className="logo zoom-hover" />
                                 </div>
+                                <div className="col-sm-1">
+                                </div>
                                 <nav className="navbar-mobile navbar-mobile-dropdown navbar navbar-expand-lg navbar-success col">
                                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                         <ul className="navbar-nav mr-auto">
                                             <li className="nav-item">
-                                                <Link to="/"><a className="nav-link">Accueil</a></Link>
+                                                <Link to="/"><button className="btn-skew-blue">Accueil</button></Link>
                                             </li>
                                             <li className="nav-item">
-                                                <Link to="/comment_ca_marche"><a className="nav-link">Comment ça marche?</a></Link>
+                                                <Link to="/comment_ca_marche"><button className="btn-skew-green">Comment ça marche</button></Link>
                                             </li>
                                             <li className="nav-item dropdown">
-                                                <Link to="/faq"><a className="nav-link">Foire aux questions</a></Link>
+                                                <Link to="/faq"><button className="btn-skew-red">Foire aux questions</button></Link>
                                             </li>
                                             <li className="nav-item dropdown">
-                                                <Link to="/actualites"><a className="nav-link">Actualites</a></Link>
+                                                <Link to="/actualites"><button className="btn-skew-purple">Actualités</button></Link>
                                             </li>
                                             <li className="nav-item">
                                                 <a href="https://www.facebook.com/selest35/" ><img src={FbLogo} className="nav-item-logo zoom-hover" /></a>
                                             </li>
-
                                         </ul>
                                     </div>
                                 </nav>
