@@ -68,7 +68,7 @@ export default class Header extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-sm-2">
-                                    <img src={logo} alt className="logo rotate-hover" />
+                                    <img src={logo} alt className="logo zoom-hover" />
                                 </div>
                                 <nav className="navbar navbar-expand-lg navbar-success col">
                                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -88,11 +88,7 @@ export default class Header extends Component {
                                             <li>
                                                 <a href="https://www.facebook.com/selest35/" ><img src={FbLogo} className="small-icon zoom-hover" /></a>
                                             </li>
-
                                         </ul>
-                                        <div>
-                                            <input type="button" className="btn-blue" value="Button"/>
-                                        </div>
                                     </div>
                                 </nav>
                             </div>
@@ -140,7 +136,7 @@ export default class Header extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-sm-2">
-                                    <img src={logo} className="logo rotate-hover" />
+                                    <img src={logo} className="logo zoom-hover" />
                                 </div>
                                 <nav className="navbar-mobile navbar-mobile-dropdown navbar navbar-expand-lg navbar-success col">
                                     <div className="collapse navbar-collapse" id="navbarSupportedContent">

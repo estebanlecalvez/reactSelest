@@ -4,6 +4,7 @@ import LeftMenu from '../components/LeftMenu';
 import Profil from '../img/theme/avatar.png';
 import Demande from '../components/Demande';
 import Selest2_0 from '../img/contenu/Actualites/selest2_0.png';
+import Banniere from '../components/Banniere';
 import { Button } from 'react-bootstrap';
 
 
@@ -87,11 +88,7 @@ export default class Demandes extends Component {
         if (this.isConnected()) {
             return (
                 <div>
-                    <div className="banniere">
-                        <div className="banniere-chemin">
-                            <p> Accueil/Demandes</p>
-                        </div>
-                    </div>
+                    <Banniere path="Demandes"/>
                     <div class="row">
                         <div class="col-sm-2 left-menu">
                             <LeftMenu />

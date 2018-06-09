@@ -1,20 +1,16 @@
 .banniere{
-    // max-height:15%;
-    background-image: url('../img/theme/img-slider-selest.png');
-    margin-bottom:10px;
-    padding-left:0px;
-    padding: 20px 0 0 20px;
-    width: 100%;
-    height:200px;
+    width:100%;
+    height:300px;
+    background-image: 
+      url("../img/theme/banner/nuages.png"),
+      url("../img/theme/banner/background.png");
+    background-position:0px -300px,0px -200px;
+    background-repeat:repeat,repeat;
+    animation: animate-banniere linear 100s infinite;
     background-size : cover;
-    background-position-y: 26%;
-    background-repeat: no-repeat;
     display:flex;
     flex-direction: row;
-    transition-duration: .2s;
-    &:hover{
-        filter:grayscale(30%);
-    }
+    margin-bottom:50px;
     .banniere-chemin{
         align-self:flex-end;
         margin-left:20px;
@@ -30,8 +26,24 @@
         p{
             color: white;
             opacity: 100%;
-        }
-        
+        } 
     }  
-}
+  }
+  @keyframes animate-banniere{
+    from{ background-position:0px -300px,0px -300px; }
+    to{ background-position: -3000px -300px, 3839px-300px }
+  }    
+ 
 
+
+
+    
+// }
+
+    // // max-height:15%;
+    // background-image: url('../img/theme/img-slider-selest.png');
+    // margin-bottom:10px;
+    // padding-left:0px;
+    // padding: 20px 0 0 20px;
+    // width: 100%;
+    // height:200px;

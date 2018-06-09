@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import LeftMenu from '../components/LeftMenu';
 import Inscription from '../components/Inscription';
+import Banniere from '../components/Banniere';
 
 
 export default class HowItWorks extends Component {
@@ -9,6 +10,7 @@ export default class HowItWorks extends Component {
     render() {
         return (
             <div>
+                <Banniere path="Comment ça marche" />
                 <div class="row">
                     <div class="col-3 left-menu">
                         <LeftMenu />

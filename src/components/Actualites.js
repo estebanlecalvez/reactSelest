@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Selest2_0 from '../img/contenu/Actualites/selest2_0.png';
 import ReuMardi from '../img/contenu/Actualites/reu_mardi.jpg';
-import Banniere from '../img/theme/img-slider-selest.png';
+import Banniere from '../components/Banniere';
 
 
 
@@ -9,13 +9,7 @@ export default class Actualites extends Component {
     render() {
         return (
             <div>
-                <div className="row">
-                    <div className="banniere">
-                        <div className="banniere-chemin">
-                            <p> Accueil/Actualites</p>
-                        </div>
-                    </div>
-                </div>
+                <Banniere path="Actualites"/>
                 <div className="row">
                     <div class="col-sm-2"></div>
                     <div class="col-sm-9">

@@ -6768,12 +6768,15 @@ body {
   .zone-marche h2 {
     color: white; }
   .zone-marche .img-zone-marche {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     height: 255px; }
     @media screen and (min-width: 768px) {
       .zone-marche .img-zone-marche {
         background-image: url("../../src/img/img-zone-marche.png");
         background-size: cover;
-        width: 100%; } }
+        width: 931px; } }
 
 .titre-zone-march {
   margin: 0px; }
@@ -7027,20 +7030,16 @@ body {
       text-align: justify; }
 
 .banniere {
-  background-image: url("../img/theme/img-slider-selest.png");
-  margin-bottom: 10px;
-  padding-left: 0px;
-  padding: 20px 0 0 20px;
   width: 100%;
-  height: 200px;
+  height: 300px;
+  background-image: url("../img/theme/banner/nuages.png"), url("../img/theme/banner/background.png");
+  background-position: 0px -300px,0px -200px;
+  background-repeat: repeat,repeat;
+  animation: animate-banniere linear 100s infinite;
   background-size: cover;
-  background-position-y: 26%;
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: row;
-  transition-duration: .2s; }
-  .banniere:hover {
-    filter: grayscale(30%); }
+  margin-bottom: 50px; }
   .banniere .banniere-chemin {
     align-self: flex-end;
     margin-left: 20px;
@@ -7055,6 +7054,12 @@ body {
     .banniere .banniere-chemin p {
       color: white;
       opacity: 100%; }
+
+@keyframes animate-banniere {
+  from {
+    background-position: 0px -300px,0px -300px; }
+  to {
+    background-position: -3000px -300px, 3539px; } }
 
 .offres-box {
   font-family: "Agency FB";

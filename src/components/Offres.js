@@ -3,13 +3,15 @@ import { Link } from "react-router-dom";
 import LeftMenu from '../components/LeftMenu';
 import Profil from '../img/theme/avatar.png';
 import Offre from '../components/Offre';
+import Banniere from '../components/Banniere';
 import { Button } from 'react-bootstrap';
 
 
 export default class Offres extends Component {
 
+
     isConnected() {
-        if (typeof localStorage.token != "undefined") {
+        if (typeof sessionStorage.token != "undefined") {
             return true;
         } else {
             return false;
@@ -19,11 +21,7 @@ export default class Offres extends Component {
         if (this.isConnected()) {
             return (
                 <div>
-                    <div className="banniere">
-                        <div className="banniere-chemin">
-                            <p> Accueil/Demandes</p>
-                        </div>
-                    </div>
+                    <Banniere path="Offres" />
                     <div class="row">
                         <div class="col-sm-2 left-menu">
                             <LeftMenu />

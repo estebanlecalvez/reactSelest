@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import LeftMenu from '../components/LeftMenu';
+import Banniere from '../components/Banniere';
 
 
 export default class Faq extends Component {
     render() {
         return (
             <div>
+                <Banniere path="Foire aux questions" />
                 <div class="row">
                     <div class="col-3 left-menu">
                         <LeftMenu />

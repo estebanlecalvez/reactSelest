@@ -85,12 +85,14 @@
     color: white;
   }
   .img-zone-marche{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     height: 255px;
     @media screen and (min-width:768px){
       background-image: url("../../src/img/img-zone-marche.png");
       background-size: cover;
-      width: 100%;
-      
+      width: 931px;      
     }
     // @media screen and (min-width:1170px){
     //   height: 272px;

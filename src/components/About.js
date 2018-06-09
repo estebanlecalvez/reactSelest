@@ -3,11 +3,13 @@ import { Link } from 'react-router-dom';
 import Charte from '../pdf/charte.pdf';
 import ReglementInterieur from '../pdf/reglement_interieur.pdf';
 import LeftMenu from '../components/LeftMenu';
+import Banniere from '../components/Banniere';
 
 export default class About extends Component {
     render() {
         return (
             <div>
+                <Banniere path="A propos" />
                 <div class="row">
                     <div class="col-3 left-menu">
                         <LeftMenu />

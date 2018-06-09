@@ -18,14 +18,14 @@ export default class Footer extends Component {
                                 <div className="col-sm-5">
                                     <h3 className="zoom-hover">A propos du Sel’est 2.0</h3>
                                     <p>Le Sel'est Vitré a pour finalité de proposer des services à la personne et de valoriser l’entraide sociale entre individus.<br />
-                                    Elle dispose d’une monnaie virtuelle fictive – Souèt – unique.<br />
-                                    La gestion des souèts est facilitée.Le but de ce site est de mettre en lumière l'association en augmentant leur notoriété.<br />
-                                    La digitalisation de cette activité est utile en vue des mutations technologiques et de l’évolution des attentes et demandes des utilisateurs.</p>
+                                        Elle dispose d’une monnaie virtuelle fictive – Souèt – unique.<br />
+                                        La gestion des souèts est facilitée.Le but de ce site est de mettre en lumière l'association en augmentant leur notoriété.<br />
+                                        La digitalisation de cette activité est utile en vue des mutations technologiques et de l’évolution des attentes et demandes des utilisateurs.</p>
                                 </div>
                                 <div className="col-sm-3 menu">
                                     <ul className="links">
                                         <li><a title="réseau social" href="https://www.facebook.com/selest35/">Facebook</a></li>
-                                        <li><Link to="/comment_ça_marche"><a title="comment utiliser">Comment ça marche?</a></Link></li>
+                                        <li><Link to="/comment_ca_marche"><a title="comment utiliser">Comment ça marche?</a></Link></li>
                                         <li><a href={Charte}>Charte</a></li>
                                         <li><a href={ReglementInterieur}>Reglement interieur</a></li>
                                     </ul>
@@ -49,7 +49,6 @@ export default class Footer extends Component {
                     <div className="pied-page">
                         <p>Réalisé par MyDigitalSchool</p>
                     </div>
-                    <Route path="/comment_ca_marche" component={HowItWorks} />
                 </div>
             </Router>
         );
