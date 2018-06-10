@@ -70,27 +70,25 @@ export default class Header extends Component {
                                 <div className="col-sm-2">
                                     <img src={logo} alt className="logo zoom-hover" />
                                 </div>
-                                <nav className="navbar navbar-expand-lg navbar-success col">
-                                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                                        <ul className="navbar-nav mr-auto">
-                                            <li className="nav-item">
-                                                <Link to="/"><a className="nav-link">Accueil</a></Link>
-                                            </li>
-                                            <li className="nav-item active">
-                                                <Link to="/demandes"><a className="nav-link">Demandes</a></Link>
-                                            </li>
-                                            <li className="nav-item active">
-                                                <Link to="/offres"><a className="nav-link">Offres</a></Link>
-                                            </li>
-                                            <li className="nav-item">
-                                                <Link to="/comment_ca_marche"><a className="nav-link">Comment ça marche?</a></Link>
-                                            </li>
-                                            <li>
-                                                <a href="https://www.facebook.com/selest35/" ><img src={FbLogo} className="small-icon zoom-hover" /></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </nav>
+                                <div className="navbar-headerzzz">
+                                    <ul>
+                                        <li>
+                                            <Link to="/">Accueil</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/demandes">Demandes</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/offres">Offres</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/comment_ca_marche">Comment ça marche?</Link>
+                                        </li>
+
+                                        <a href="https://www.facebook.com/selest35/" className="small-icon-header-fb" ></a>
+
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <Route exact path="/" component={Home} />
@@ -132,29 +130,23 @@ export default class Header extends Component {
                                 <div className="col-sm-2">
                                     <img src={logo} className="logo zoom-hover" />
                                 </div>
-                                <div className="col-sm-1">
+                                <div className="navbar-headerzzz">
+                                    <ul>
+                                        <li>
+                                            <Link to="/">Accueil</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/comment_ca_marche">Comment ça marche</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/faq">Foire aux questions</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/actualites">Actualités</Link>
+                                        </li>
+                                        <a href="https://www.facebook.com/selest35/" className="small-icon-header-fb" ></a>
+                                    </ul>
                                 </div>
-                                <nav className="navbar-mobile navbar-mobile-dropdown navbar navbar-expand-lg navbar-success col">
-                                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                                        <ul className="navbar-nav mr-auto">
-                                            <li className="nav-item">
-                                                <Link to="/"><button className="btn-skew-blue">Accueil</button></Link>
-                                            </li>
-                                            <li className="nav-item">
-                                                <Link to="/comment_ca_marche"><button className="btn-skew-green">Comment ça marche</button></Link>
-                                            </li>
-                                            <li className="nav-item dropdown">
-                                                <Link to="/faq"><button className="btn-skew-red">Foire aux questions</button></Link>
-                                            </li>
-                                            <li className="nav-item dropdown">
-                                                <Link to="/actualites"><button className="btn-skew-purple">Actualités</button></Link>
-                                            </li>
-                                            <li className="nav-item">
-                                                <a href="https://www.facebook.com/selest35/" ><img src={FbLogo} className="nav-item-logo zoom-hover" /></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </nav>
                             </div>
                         </div>
                         <Route exact path="/" component={Home} />

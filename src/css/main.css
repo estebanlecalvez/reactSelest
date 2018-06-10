@@ -6631,8 +6631,50 @@ body {
   width: 45px;
   border-radius: 50%; }
 
+.navbar-headerzzz {
+  margin: 50px 0; }
+  .navbar-headerzzz ul {
+    margin: 0;
+    padding: 0;
+    display: flex; }
+    .navbar-headerzzz ul li {
+      list-style: none; }
+      .navbar-headerzzz ul li a {
+        padding: 10px 20px;
+        font-family: sans-serif;
+        position: relative;
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black; }
+        .navbar-headerzzz ul li a:before {
+          content: '';
+          position: absolute;
+          bottom: -2px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 7px;
+          height: 7px;
+          background: #262626;
+          opacity: 0;
+          border-radius: 50%;
+          transition: .5s; }
+        .navbar-headerzzz ul li a:hover:before {
+          opacity: 0.8;
+          box-shadow: 15px 0 0 #746c91, -15px 0 0 #746c91, 30px 0 0 #2377B9, -30px 0 0 #2377B9; }
+
 .small-icon {
   max-width: 30px; }
+
+.small-icon-header-fb {
+  height: 30px;
+  width: 30px;
+  background-image: url("../img/theme/fb.png");
+  background-size: cover;
+  margin-left: 10px;
+  margin-top: 5px; }
+  .small-icon-header-fb:hover {
+    background-image: url("../img/theme/fbHover.png"); }
 
 .medium-icon {
   max-width: 50px; }

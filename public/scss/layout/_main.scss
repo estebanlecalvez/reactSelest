@@ -2,6 +2,19 @@
     max-width:30px; 
 }
 
+.small-icon-header-fb{
+    height:30px;
+    width:30px;
+    background-image: url("../img/theme/fb.png");
+    background-size:cover;
+    margin-left:10px;
+    margin-top:5px;
+    &:hover{
+        background-image: url("../img/theme/fbHover.png");
+    }
+}
+
+
 .medium-icon{
     max-width:50px;
 }
