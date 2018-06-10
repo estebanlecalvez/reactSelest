@@ -4,17 +4,13 @@
     margin-bottom:20px;
     border-style:solid;
     border-width:2px;
-    border-color:#ffdc50;
+    border-color:#2377b9;
     border-radius: 15px;
     transition-property: background-color;
     -webkit-transition-property: background-color;
     transition-duration: .2s;
     transition-timing-function: ease-out;
-    &:hover{
-        background-color:#2377b9;
-        -webkit-background-color:#2377b9;
-        color:white;
-    }
+
     .demandes-demandeur{
         text-align:center;
         font-size:15px;
@@ -31,12 +27,13 @@
             font-size:20px;
             text-align:justify;
         }
-    }
-    Button{
+        a{
         position: absolute;
-        right: 25px;
-        bottom: 40px;
+        right: 0;
+        bottom: 0;
     }
+    }
+    
 }
 
 

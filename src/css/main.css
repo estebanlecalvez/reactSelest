@@ -6716,6 +6716,19 @@ body {
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg); }
 
+.rounded-photo {
+  border-radius: 50%; }
+
+.medium-photo {
+  max-height: 150px; }
+
+.center-image {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
 .img-background-home {
   width: 100%;
   height: 550px;
@@ -6945,7 +6958,7 @@ body {
 
 .left-menu {
   padding-top: 10px;
-  margin: 10px;
+  margin-right: 30px;
   margin-left: 30px;
   border-style: solid;
   border-width: 2px;
@@ -7117,9 +7130,6 @@ body {
   -webkit-transition-property: background-color;
   transition-duration: .2s;
   transition-timing-function: ease-out; }
-  .offres-box:hover {
-    background-color: #ffdc50;
-    -webkit-background-color: #ffdc50; }
   .offres-box .offres-demandeur {
     text-align: center;
     font-size: 15px; }
@@ -7132,10 +7142,10 @@ body {
     .offres-box .offres-text p {
       font-size: 20px;
       text-align: justify; }
-  .offres-box Button {
-    position: absolute;
-    right: 25px;
-    bottom: 40px; }
+    .offres-box .offres-text a {
+      position: absolute;
+      right: 0;
+      bottom: 0; }
 
 .demandes-box {
   font-family: "Agency FB";
@@ -7143,16 +7153,12 @@ body {
   margin-bottom: 20px;
   border-style: solid;
   border-width: 2px;
-  border-color: #ffdc50;
+  border-color: #2377b9;
   border-radius: 15px;
   transition-property: background-color;
   -webkit-transition-property: background-color;
   transition-duration: .2s;
   transition-timing-function: ease-out; }
-  .demandes-box:hover {
-    background-color: #2377b9;
-    -webkit-background-color: #2377b9;
-    color: white; }
   .demandes-box .demandes-demandeur {
     text-align: center;
     font-size: 15px; }
@@ -7165,10 +7171,10 @@ body {
     .demandes-box .demandes-text p {
       font-size: 20px;
       text-align: justify; }
-  .demandes-box Button {
-    position: absolute;
-    right: 25px;
-    bottom: 40px; }
+    .demandes-box .demandes-text a {
+      position: absolute;
+      right: 0;
+      bottom: 0; }
 
 .btn-skew-blue {
   width: 180px;
@@ -7301,3 +7307,18 @@ body {
   .btn-skew-red:hover:after {
     left: -10%;
     width: 120%; }
+
+.card-text ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-left: 100px; }
+  .card-text ul li {
+    list-style: none; }
+    .card-text ul li a {
+      font-family: sans-serif;
+      position: relative;
+      display: block;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: black; }

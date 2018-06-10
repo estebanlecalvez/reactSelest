@@ -10,10 +10,6 @@
     -webkit-transition-property: background-color;
     transition-duration: .2s;
     transition-timing-function: ease-out;
-    &:hover{
-        background-color:#ffdc50;
-        -webkit-background-color:#ffdc50;
-    }
     .offres-demandeur{
         text-align:center;
         font-size:15px;
@@ -30,11 +26,12 @@
             font-size:20px;
             text-align:justify;
         }
+        a{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
     }
-    Button{
-        position: absolute;
-        right: 25px;
-        bottom: 40px;
-    }
+ 
 }
 

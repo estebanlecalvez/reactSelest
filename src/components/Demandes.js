@@ -109,7 +109,7 @@ export default class Demandes extends Component {
                                     <div>
                                         <p>Je cherche quelqu'un de disponible sur la semaine du 14/08/2018 au 20/08/2018 pour garder ma fille Lila et mon garçon Diego de 8h30 à 18h</p>
                                     </div>
-                                    <Button className="btn btn-success">En savoir plus</Button>
+                                    <Link to="/demande" className="btn-skew-green">En savoir plus</Link>
                                 </div>
                             </div>
 
@@ -127,7 +127,7 @@ export default class Demandes extends Component {
                                     <div>
                                         <p>Je cherche quelqu'un de disponible sur la semaine du 14/08/2018 au 20/08/2018 pour garder ma fille Lila et mon garçon Diego de 8h30 à 18h</p>
                                     </div>
-                                    <Button className="btn btn-success">En savoir plus</Button>
+                                    <Link to="/demande" className="btn-skew-green">En savoir plus</Link>
                                 </div>
                             </div>
                             <div class="row demandes-box">
@@ -144,7 +144,7 @@ export default class Demandes extends Component {
                                     <div>
                                         <p>Je cherche quelqu'un de disponible sur la semaine du 14/08/2018 au 20/08/2018 pour garder ma fille Lila et mon garçon Diego de 8h30 à 18h</p>
                                     </div>
-                                    <Button className="btn btn-success">En savoir plus</Button>
+                                    <Link to="/demande" className="btn-skew-green">En savoir plus</Link>
                                 </div>
                             </div>
                             <div class="row demandes-box">
@@ -161,7 +161,7 @@ export default class Demandes extends Component {
                                     <div>
                                         <p>Je cherche quelqu'un de disponible sur la semaine du 14/08/2018 au 20/08/2018 pour garder ma fille Lila et mon garçon Diego de 8h30 à 18h</p>
                                     </div>
-                                    <Button className="btn btn-success">En savoir plus</Button>
+                                    <Link to="/demande" className="btn-skew-green">En savoir plus</Link>
                                 </div>
                             </div>
                         </div>

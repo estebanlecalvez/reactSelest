@@ -64,3 +64,18 @@
 	}
 }
 
+.rounded-photo{
+    border-radius:50%;
+}
+
+.medium-photo{
+    max-height:150px;
+}
+
+.center-image{
+    margin-top:10px;
+    margin-bottom:10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

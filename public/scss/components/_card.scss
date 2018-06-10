@@ -1,0 +1,22 @@
+.card-text{
+    ul{
+        margin:0;
+        padding:0;
+        display:flex;
+        margin-left:100px;
+        li{
+            list-style:none;
+            a{
+                font-family:sans-serif;
+                position : relative;
+                display:block;
+                text-decoration:none;
+                text-transform:uppercase;
+                color:black;
+            }
+        }
+    } 
+    
+        
+
+}

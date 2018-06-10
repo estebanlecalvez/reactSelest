@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import LeftMenu from '../components/LeftMenu';
 import Banniere from '../components/Banniere';
+import Photo from '../img/contenu/photoFemme.jpg';
+
 
 export default class Offre extends Component {
     render() {
         return (
             <div>
-                <Banniere path="Offres/Offre" />
+                <Banniere path="Offre" />
                 <div className="container-fluid">
                     <div className="row">
                         <div class="col-sm-2">
@@ -18,7 +20,7 @@ export default class Offre extends Component {
                                 <strong className="card-text">Description</strong>
                                 <p className="card-title">Cherche une personne pour venir m'aider à garder les chiens des voisins, ils sont très gentils, et en manque d'amuuur, pliz hailp</p>
                             </div>
-                            <div >
+                            <div className="card-text">
                                 <p className="lead">Categorie :
           <span>
                                         Multiple
@@ -34,16 +36,25 @@ export default class Offre extends Component {
                                         12/07/2018
           </span>
                                 </p>
-                                <Link to="/messages"><button type="button" className="btn btn-success">Discuter</button></Link>
+                                <ul>
+                                    <li>
+
+                                        <Link to="/messages" className="btn-skew-blue">Discuter</Link>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                         <div className="card bottom_shadowed_box col-sm-3">
-                            <img className="card-img-top" src="img/theme/profil.png" alt="Card image cap" />
-                            <div className="card-body">
-                                <p className="card-title">User Name</p>
-                                <p className="card-text">Description</p>
-                                <p className="card-body">Age : 29</p>
-                                <a href="#" className="btn btn-primary">Voir le profil</a>
+                        <a><img src={Photo} className="rounded-photo medium-photo center-image"/></a>
+                            <div className="card-text">
+                                <p className="card-title">Emeline Lafondue</p>
+                                <p className="card-text">Jeune infirmière venant d'arriver sur Vitré et cherchant à faire des connaissances et aider les autres.</p>
+                                <p className="card-body">Age : 26</p>
+                                <ul>
+                                    <li>
+                                        <Link to="/profil" className="btn-skew-green">Voir le profil</Link>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>

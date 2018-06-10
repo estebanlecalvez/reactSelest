@@ -9,7 +9,7 @@ export default class Demande extends Component {
     render() {
         return (
             <div>
-                <Banniere path="Demandes/demande" />
+                <Banniere path="Demande" />
                 <div className="container-fluid">
 
                     <div className="row">
@@ -21,7 +21,7 @@ export default class Demande extends Component {
                                 <strong className="card-text">Description</strong>
                                 <p className="card-title">Cherche une personne pour venir m'aider à garder les chiens des voisins, ils sont très gentils, et en manque d'amuuur, pliz hailp</p>
                             </div>
-                            <div >
+                            <div className="card-text">
                                 <p className="lead">Categorie :
           <span>
                                         Multiple
@@ -37,8 +37,14 @@ export default class Demande extends Component {
                                         12/07/2018
           </span>
                                 </p>
-                                <Link to="/messages"><button type="button" className="btn btn-success">Discuter</button></Link>
-                                <Link to="/profil"><button type="button" className="btn btn-primary">Voir le profil</button></Link>
+                                <ul>
+                                    <li>
+                                        <Link to="/messages" className="btn-skew-blue">Discuter</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/profil" className="btn-skew-green">Voir le profil</Link>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
