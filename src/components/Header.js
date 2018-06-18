@@ -64,24 +64,26 @@ export default class Header extends Component {
                                 <div className="col-sm-2">
                                     <img src={logo} alt className="logo zoom-hover" />
                                 </div>
-                                <div className="navbar-headerzzz">
-                                    <ul>
-                                        <li>
-                                            <Link to="/">Accueil</Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/demandes">Demandes</Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/offres">Offres</Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/comment_ca_marche">Comment ça marche?</Link>
-                                        </li>
+                                <div className="navbar-headerzzz col-sm-10">
+                                    <nav>
+                                        <ul className="">
+                                            <li>
+                                                <Link to="/">Accueil</Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/demandes">Demandes</Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/offres">Offres</Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/comment_ca_marche">Comment ça marche?</Link>
+                                            </li>
 
-                                        <a href="https://www.facebook.com/selest35/" className="small-icon-header-fb" ></a>
+                                            <a href="https://www.facebook.com/selest35/" className="small-icon-header-fb" ></a>
 
-                                    </ul>
+                                        </ul>
+                                    </nav>
                                 </div>
                             </div>
                         </div>

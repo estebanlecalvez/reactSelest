@@ -11,10 +11,11 @@ export default class HowItWorks extends Component {
         return (
             <div>
                 <Banniere path="Comment ça marche" />
-                <div class="row">
-                    <div class="col-sm-2">
+                <div class="row page-how">
+                    <div class="col-sm-3">
+                        <div className="img-personage"></div>
                     </div>
-                    <div class="col">
+                    <div class="col-sm-8">
                         <div class="container">
                             <div class="informative">
                                 <p>Tu as un peu de temps ? Ou tu as des objets à prêter ? Tu peux participer !</p>

@@ -89,20 +89,20 @@ export default class Demandes extends Component {
             return (
                 <div>
                     <Banniere path="Demandes"/>
-                    <div class="row">
-                        <div class="col-sm-2 left-menu">
+                    <div class="row page-demande">
+                        <div class="col-sm-2 left-menu zone-left">
                             <LeftMenu />
                         </div>
                         {/* DEMANDE 1 */}
-                        <div class="col-8">
-                            <div class="row demandes-box">
+                        <div class="col-sm-8 ">
+                            <div class="row demandes-box zone-right">
                                 <div className="col-sm-2 demandes-demandeur">
                                     <p> Demandeur(se)</p>
                                     <img src={Profil} />
                                     <p><b> Maxime</b></p>
                                     <p>Souèts: <b><a id="SouetsUserNb1">-1501</a></b></p>
                                 </div>
-                                <div class="col-sm-7 demandes-text">
+                                <div class="col-sm-9 demandes-text">
                                     <div className="demandes-title">
                                         <p>Garde d'enfants</p>
                                     </div>
@@ -113,14 +113,14 @@ export default class Demandes extends Component {
                                 </div>
                             </div>
 
-                            <div class="row demandes-box">
+                            <div class="row demandes-box zone-right">
                                 <div className="col-sm-2 demandes-demandeur">
                                     <a> Demandeur(se)</a>
                                     <img src={Profil} />
                                     <p><b>Esteban</b></p>
                                     <p>Souèts: <b><a id="SouetsUserNb2">0</a></b></p>
                                 </div>
-                                <div class="col-sm-7 demandes-text">
+                                <div class="col-sm-9 demandes-text">
                                     <div className="demandes-title">
                                         <p>Garde d'enfants</p>
                                     </div>
@@ -130,14 +130,14 @@ export default class Demandes extends Component {
                                     <Link to="/demande" className="btn-skew-green">En savoir plus</Link>
                                 </div>
                             </div>
-                            <div class="row demandes-box">
+                            <div class="row demandes-box zone-right">
                                 <div className="col-sm-2 demandes-demandeur">
                                     <a> Demandeur(se)</a>
                                     <img src={Profil} />
                                     <p><b>David</b></p>
                                     <p>Souèts: <b><a id="SouetsUserNb3">500</a></b></p>
                                 </div>
-                                <div class="col-sm-7 demandes-text">
+                                <div class="col-sm-9 demandes-text">
                                     <div className="demandes-title">
                                         <p>Garde d'enfants</p>
                                     </div>
@@ -147,14 +147,14 @@ export default class Demandes extends Component {
                                     <Link to="/demande" className="btn-skew-green">En savoir plus</Link>
                                 </div>
                             </div>
-                            <div class="row demandes-box">
+                            <div class="row demandes-box zone-right">
                                 <div className="col-sm-2 demandes-demandeur">
                                     <a> Demandeur(se)</a>
                                     <img src={Profil} />
                                     <p><b>Cecile</b></p>
                                     <p>Souèts: <b><a id="SouetsUserNb4">-1000</a></b></p>
                                 </div>
-                                <div class="col-sm-7 demandes-text">
+                                <div class="col-sm-9 demandes-text">
                                     <div className="demandes-title">
                                         <p>Garde d'enfants</p>
                                     </div>

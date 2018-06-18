@@ -12,24 +12,26 @@
     margin-bottom:50px;
     .banniere-chemin{
         align-self:flex-end;
-        margin-left:300px;
-        padding:20px;
+        margin-left:20px;
         padding-bottom:0;
-        background-color:rgba(75, 60, 131, 0.6);
+        background-color:rgba(0, 0, 45, 0.4);
         transform:padding-bottom;
         transition-duration: .2s;
         transition-timing-function: ease-out;
+        border-radius: 45px;
+        margin-bottom: 15px;
         &:hover{
             border-left: 5px dotted white;
             border-right: 5px dotted white;
             padding-right:50px;
             padding-left:50px;
-            background-color:rgb(116,108,145);
+            background-color:rgba(116,108,145, 0.7);
         }
         p{
             color: white;
-            font-size:25px;
+            font-size:18px;
             opacity: 100%;
+            margin:10px;
         } 
     }  
   }

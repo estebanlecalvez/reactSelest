@@ -1,0 +1,26 @@
+.page-question{
+  .img-personage{
+    background-image: url('../img/personage-1.png');
+    text-align: center;
+    background-size: cover;
+    width: 70%;
+    height: 375px;
+    margin:auto;
+  }
+  h3{
+    font-size: 20px;
+    color: $text-color-t;
+  }
+  p{
+    color:$text-color;
+  }
+  .informative{
+    background-color:$bg-color-light-sec;
+    border-radius: 10px;
+    box-shadow: 0px 12px 15px 0px rgba(0, 0, 0, 0.3);
+    padding-left: 25px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-bottom: 45px;
+  }
+}

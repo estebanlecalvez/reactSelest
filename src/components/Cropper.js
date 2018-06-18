@@ -83,11 +83,11 @@ export default class Cropper extends React.Component {
                         <ModalBody>
                             <div className="container">
                                 <form onSubmit={(e) => this._handleSubmit(e)}>
-                                    <input 
+                                    <input
                                         type="file"
                                         onChange={(e) => this._handleImageChange(e)} />
                                     <button
-                                        
+
                                         type="submit"
                                         onClick={(e) => this._handleSubmit(e)}>Envoyer</button>
                                 </form>
@@ -95,7 +95,7 @@ export default class Cropper extends React.Component {
                                     {$imagePreview}
                                 </div>
                             </div>
-                            
+
 
 
                         </ModalBody>
