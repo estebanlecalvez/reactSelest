@@ -6677,7 +6677,7 @@ body {
           transition: .5s; }
         .navbar-headerzzz ul li a:hover:before {
           opacity: 0.8;
-          box-shadow: 15px 0 0 #746c91, -15px 0 0 #746c91, 30px 0 0 #2377B9, -30px 0 0 #2377B9; }
+          box-shadow: 15px 0 0 #746c91, -15px 0 0 #746c91, 30px 0 0 #2377B9, -30px 0 0 #2377B9; }
 
 .small-icon {
   max-width: 30px; }
@@ -7037,6 +7037,28 @@ body {
   border: 2px solid #f8a73e;
   border-radius: 0 10px 5px 5px;
   height: 40px; }
+
+.other-messages-offres {
+  background-color: blue;
+  color: white;
+  text-align: left;
+  padding: 5px;
+  border: 2px solid #5d5dff;
+  border-radius: 0 10px 5px 5px;
+  height: 40px; }
+
+.my-messages-offres {
+  background-color: #f8e63e;
+  color: black;
+  text-align: right;
+  padding: 5px;
+  border: 2px solid #f8a73e;
+  border-radius: 5px 10px 0 5px;
+  position: absolute;
+  right: 0px;
+  height: 40px;
+  padding: 5px;
+  margin-right: 5px; }
 
 .informative p {
   text-align: justify;

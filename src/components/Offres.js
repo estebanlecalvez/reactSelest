@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import LeftMenu from '../components/LeftMenu';
-import Profil from '../img/theme/avatar.png';
+import Profil from '../img/theme/avatar_offre.png';
 import Offre from '../components/Offre';
 import Banniere from '../components/Banniere';
 import { Button } from 'react-bootstrap';

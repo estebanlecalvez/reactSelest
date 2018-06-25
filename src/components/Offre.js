@@ -39,7 +39,7 @@ export default class Offre extends Component {
                                 <ul>
                                     <li>
 
-                                        <Link to="/messages" className="btn-skew-blue">Discuter</Link>
+                                        <Link to="/messages-offres" className="btn-skew-blue">Discuter</Link>
                                     </li>
                                 </ul>
                             </div>

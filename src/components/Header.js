@@ -23,6 +23,7 @@ import MonCompte from '../components/user/MonCompte';
 import profilImg from '../img/contenu/photoFemme.jpg';
 import MesOffres from '../components/user/MesOffres';
 import MesDemandes from '../components/user/MesDemandes';
+import MessagerieOffre from '../components/MessagerieOffre';
 
 export default class Header extends Component {
 
@@ -97,6 +98,7 @@ export default class Header extends Component {
                         <Route path="/offres" component={Offres} />
                         <Route path="/offre" component={Offre} />
                         <Route path="/messages" component={Messagerie} />
+                        <Route path="/messages-offres" component={MessagerieOffre} />
                         <Route path="/profil" component={OthersProfile} />
                         <Route path="/mes_demandes" component={MesDemandes} />
                         <Route path="/mes_offres" component={MesOffres} />
