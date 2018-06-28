@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import LeftMenu from '../components/LeftMenu';
-import Profil from '../img/theme/avatar_offre.png';
+import Maxime from '../img/profile_picture/offres/homme1.png';
+import David from '../img/profile_picture/offres/homme2.png';
+import Esteban from '../img/profile_picture/offres/homme3.png';
+import Cecile from '../img/profile_picture/offres/femme1.png';
 import Offre from '../components/Offre';
 import Banniere from '../components/Banniere';
 import { Button } from 'react-bootstrap';
 
 
 export default class Offres extends Component {
-
-
     isConnected() {
         if (typeof sessionStorage.token != "undefined") {
             return true;
@@ -31,7 +32,9 @@ export default class Offres extends Component {
                             <div class="row offres-box zone-right">
                                 <div className="col-sm-2 offres-demandeur">
                                     <p> Demandeur(se)</p>
-                                    <img src={Profil} />
+                                    <div className="profil-picture">
+                                        <img src={Maxime} />
+                                    </div>
                                     <p><b> Maxime</b></p>
                                     <p>Souèts: <b><a id="SouetsUserNb1">-1501</a></b></p>
                                 </div>
@@ -49,7 +52,7 @@ export default class Offres extends Component {
                             <div class="row offres-box zone-right">
                                 <div className="col-sm-2 offres-demandeur">
                                     <a> Demandeur(se)</a>
-                                    <img src={Profil} />
+                                    <img src={Esteban} />
                                     <p><b>Esteban</b></p>
                                     <p>Souèts: <b><a id="SouetsUserNb2">0</a></b></p>
                                 </div>
@@ -66,7 +69,7 @@ export default class Offres extends Component {
                             <div class="row offres-box zone-right">
                                 <div className="col-sm-2 offres-demandeur">
                                     <a> Demandeur(se)</a>
-                                    <img src={Profil} />
+                                    <img src={David} />
                                     <p><b>David</b></p>
                                     <p>Souèts: <b><a id="SouetsUserNb3">500</a></b></p>
                                 </div>
@@ -83,7 +86,7 @@ export default class Offres extends Component {
                             <div class="row offres-box zone-right">
                                 <div className="col-sm-2 offres-demandeur">
                                     <a> Demandeur(se)</a>
-                                    <img src={Profil} />
+                                    <img src={Cecile} />
                                     <p><b>Cecile</b></p>
                                     <p>Souèts: <b><a id="SouetsUserNb4">-1000</a></b></p>
                                 </div>

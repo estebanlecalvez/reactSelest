@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import LeftMenu from '../components/LeftMenu';
 import Banniere from '../components/Banniere';
-import Photo from '../img/contenu/photoFemme.jpg';
+import Photo from '../img/profile_picture/demandes/homme2.png';
+
 
 
 export default class Offre extends Component {
@@ -16,7 +17,7 @@ export default class Offre extends Component {
                         </div>
                         <div className="card col-sm-5">
                             <div className="card-body">
-                                <h2 className="card-title">Emeline La Fondue</h2>
+                                <h2 className="card-title">Maxime</h2>
                                 <strong className="card-text">Description</strong>
                                 <p className="card-title">Cherche une personne pour venir m'aider à garder les chiens des voisins, ils sont très gentils, et en manque d'amuuur, pliz hailp</p>
                             </div>
@@ -47,8 +48,8 @@ export default class Offre extends Component {
                         <div className="card bottom_shadowed_box col-sm-3">
                         <a><img src={Photo} className="rounded-photo medium-photo center-image"/></a>
                             <div className="card-text">
-                                <p className="card-title">Emeline Lafondue</p>
-                                <p className="card-text">Jeune infirmière venant d'arriver sur Vitré et cherchant à faire des connaissances et aider les autres.</p>
+                                <p className="card-title"><b>Maxime</b></p>
+                                <p className="card-text">Jeune footballeur venant d'arriver sur Vitré et cherchant à faire des connaissances et aider les autres.</p>
                                 <p className="card-body">Age : 26</p>
                                 <ul>
                                     <li>

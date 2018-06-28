@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import LeftMenu from '../components/LeftMenu';
-import profil from '../img/contenu/patoche.jpg';
+import profil from '../img/profile_picture/demandes/homme2.png';
 import Banniere from '../components/Banniere';
 
 export default class MessagerieOffre extends Component {
@@ -22,7 +22,7 @@ export default class MessagerieOffre extends Component {
                                         <img src={profil} />
                                     </div>
                                     <div class="col">
-                                        <h4>Patrick Sebastien</h4>
+                                        <h4>Davi Tofi</h4>
                                     </div>
                                 </div>
                             </div>

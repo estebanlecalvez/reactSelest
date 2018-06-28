@@ -5,7 +5,7 @@ import Banniere from '../components/Banniere';
 
 
 import LeftMenu from '../components/LeftMenu';
-import Photo from '../img/contenu/photoFemme.jpg';
+import Photo from '../img/profile_picture/demandes/homme2.png';
 
 export default class OthersProfile extends Component {
     render() {
@@ -20,12 +20,12 @@ export default class OthersProfile extends Component {
                         <a><img src={Photo} className="rounded-photo" /></a>
                     </div>
                     <div className="col-4">
-                        <p>Nom : <a>Lafondue</a></p>
-                        <p>Prenom : <a>Emeline</a></p>
-                        <p>Age :<a>26</a></p>
-                        <p>Description : <a>Jeune infirmière venant d'arriver sur Vitré et cherchant à faire des connaissances et aider les autres.</a></p>
-                        <p>Position : <a>Vitré</a></p>
-                        <p>Adresse : <a>Cet utilisateur n'a pas souhaité rendre son adresse publique.</a></p>
+                        <p><b>Nom : </b><a>Tofi</a></p>
+                        <p><b>Prenom : </b><a>Davi</a></p>
+                        <p><b>Age :</b><a>26</a></p>
+                        <p><b>Description : </b><a>Jeune footballeur venant d'arriver sur Vitré et cherchant à faire des connaissances et aider les autres.</a></p>
+                        <p><b>Position : </b><a>Vitré</a></p>
+                        <p><b>Adresse : </b><a>Cet utilisateur n'a pas souhaité rendre son adresse publique.</a></p>
                         <Link to="/"><Button className="btn btn-danger">Accueil</Button></Link>
                     </div>
                 </div>

@@ -17,9 +17,9 @@ export default class Demande extends Component {
                         </div>
                         <div className="card col-sm-5">
                             <div className="card-body">
-                                <h2 className="card-title">Emeline La Fondue</h2>
+                                <h2 className="card-title">Davi Tofi</h2>
                                 <strong className="card-text">Description</strong>
-                                <p className="card-title">Cherche une personne pour venir m'aider à garder les chiens des voisins, ils sont très gentils, et en manque d'amuuur, pliz hailp</p>
+                                <p className="card-title">Cherche une personne pour venir garder mes enfants une après midi, ils sont très gentils et calmes.</p>
                             </div>
                             <div className="card-text">
                                 <p className="lead">Categorie :

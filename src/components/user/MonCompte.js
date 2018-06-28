@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from 'reactstrap';
 import positionLogo from '../../img/contenu/positionLogo.png';
 import LeftMenu from '../../components/LeftMenu';
-import Photo from '../../img/contenu/photoFemme.jpg';
+import Photo from '../../img/profile_picture/demandes/homme2.png';
 import Cropper from '../../components/Cropper';
 
 
@@ -18,7 +18,7 @@ export default class MonCompte extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-2 left-col-my-account">
-                            <p> Emeline La Fondue</p>
+                            <p>Davi Tofi</p>
                             <a><img src={Photo} className="imgMyAccount zoom-hover" /></a>
                             <Cropper buttonLabel="Changer ma photo de profil" />
                         </div><div className="col-1"></div>
@@ -31,7 +31,7 @@ export default class MonCompte extends Component {
                         </div>
                         <div className="col-4">
                             <h3>A propos de moi</h3>
-                            <p>Jeune infirmière venant d'arriver sur Vitré et cherchant à faire des connaissances et aider les autres.</p>
+                            <p>Jeune footballeur venant d'arriver sur Vitré et cherchant à faire des connaissances et aider les autres.</p>
                         </div>
 
                     </div>

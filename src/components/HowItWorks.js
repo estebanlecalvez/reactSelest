@@ -3,14 +3,24 @@ import { Link } from "react-router-dom";
 import LeftMenu from '../components/LeftMenu';
 import Inscription from '../components/Inscription';
 import Banniere from '../components/Banniere';
-
-
+import { Player } from 'video-react';
+import Video from '../img/theme/StoryTelling Selest.mp4';
+import "../../node_modules/video-react/dist/video-react.css"; // import css
 export default class HowItWorks extends Component {
 
     render() {
         return (
             <div>
                 <Banniere path="Comment ça marche" />
+                <div className="video-container">
+                    <div className="video">
+                        <Player
+                            playsInline
+                            poster="/assets/poster.png"
+                            src={Video}
+                        />
+                    </div>
+                </div>
                 <div class="row page-how">
                     <div class="col-sm-3">
                         <div className="img-personage"></div>
@@ -38,7 +48,7 @@ export default class HowItWorks extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
         );
     }
 }

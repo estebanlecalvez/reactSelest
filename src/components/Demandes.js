@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import LeftMenu from '../components/LeftMenu';
-import Profil from '../img/theme/avatar.png';
 import Demande from '../components/Demande';
+import Maxime from '../img/profile_picture/demandes/homme1.png';
+import David from '../img/profile_picture/demandes/homme2.png';
+import Esteban from '../img/profile_picture/demandes/homme3.png';
+import Cecile from '../img/profile_picture/demandes/femme1.png';
 import Selest2_0 from '../img/contenu/Actualites/selest2_0.png';
 import Banniere from '../components/Banniere';
 import { Button } from 'react-bootstrap';
@@ -98,7 +101,7 @@ export default class Demandes extends Component {
                             <div class="row demandes-box zone-right">
                                 <div className="col-sm-2 demandes-demandeur">
                                     <p> Demandeur(se)</p>
-                                    <img src={Profil} />
+                                    <img src={Maxime} />
                                     <p><b> Maxime</b></p>
                                     <p>Souèts: <b><a id="SouetsUserNb1">-1501</a></b></p>
                                 </div>
@@ -116,7 +119,7 @@ export default class Demandes extends Component {
                             <div class="row demandes-box zone-right">
                                 <div className="col-sm-2 demandes-demandeur">
                                     <a> Demandeur(se)</a>
-                                    <img src={Profil} />
+                                    <img src={Esteban} />
                                     <p><b>Esteban</b></p>
                                     <p>Souèts: <b><a id="SouetsUserNb2">0</a></b></p>
                                 </div>
@@ -133,7 +136,7 @@ export default class Demandes extends Component {
                             <div class="row demandes-box zone-right">
                                 <div className="col-sm-2 demandes-demandeur">
                                     <a> Demandeur(se)</a>
-                                    <img src={Profil} />
+                                    <img src={David} />
                                     <p><b>David</b></p>
                                     <p>Souèts: <b><a id="SouetsUserNb3">500</a></b></p>
                                 </div>
@@ -150,7 +153,7 @@ export default class Demandes extends Component {
                             <div class="row demandes-box zone-right">
                                 <div className="col-sm-2 demandes-demandeur">
                                     <a> Demandeur(se)</a>
-                                    <img src={Profil} />
+                                    <img src={Cecile} />
                                     <p><b>Cecile</b></p>
                                     <p>Souèts: <b><a id="SouetsUserNb4">-1000</a></b></p>
                                 </div>

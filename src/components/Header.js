@@ -20,7 +20,7 @@ import OthersProfile from '../components/OthersProfile';
 import HowItWorks from '../components/HowItWorks';
 import LogoutButton from '../components/LogoutButton';
 import MonCompte from '../components/user/MonCompte';
-import profilImg from '../img/contenu/photoFemme.jpg';
+import profilImg from '../img/profile_picture/demandes/homme2.png';
 import MesOffres from '../components/user/MesOffres';
 import MesDemandes from '../components/user/MesDemandes';
 import MessagerieOffre from '../components/MessagerieOffre';

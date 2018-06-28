@@ -7163,6 +7163,12 @@ body {
   .page-offre .offres-box .offres-demandeur {
     text-align: center;
     font-size: 15px; }
+    .page-offre .offres-box .offres-demandeur img {
+      border-radius: 50%;
+      box-shadow: 0px 3px 10px;
+      transition: 0.2s; }
+      .page-offre .offres-box .offres-demandeur img:hover {
+        transform: scale(1.03); }
   .page-offre .offres-box .offres-title p {
     font-size: 30px; }
   .page-offre .offres-box .offres-text p {
@@ -7197,6 +7203,12 @@ body {
   .page-demande .demandes-box .demandes-demandeur {
     text-align: center;
     font-size: 15px; }
+    .page-demande .demandes-box .demandes-demandeur img {
+      border-radius: 50%;
+      box-shadow: 0px 3px 10px;
+      transition: 0.2s; }
+      .page-demande .demandes-box .demandes-demandeur img:hover {
+        transform: scale(1.03); }
   .page-demande .demandes-box .demandes-title p {
     font-size: 30px; }
   .page-demande .demandes-box .demandes-text p {
@@ -7397,3 +7409,13 @@ body {
   padding-top: 30px;
   padding-bottom: 1px;
   margin-bottom: 45px; }
+
+.video-container {
+  width: 70%;
+  margin: auto;
+  border-radius: 15px;
+  background-color: black;
+  margin-bottom: 20px; }
+  .video-container .video {
+    width: 95%;
+    margin: auto; }
