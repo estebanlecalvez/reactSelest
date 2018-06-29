@@ -6,7 +6,9 @@ import request from 'request';
 import Photo from '../img/contenu/photoFemme.jpg';
 import Crop from 'react-cropper';
 import 'cropperjs/dist/cropper.css';
-
+const paddingLeft = {
+    paddingLeft:"75px"
+  };
 export default class Cropper extends React.Component {
 
 
@@ -72,7 +74,7 @@ export default class Cropper extends React.Component {
         }
         return (
             <div>
-                <div className="container">
+                <div className="container" style={paddingLeft}>
                     <button className="btn-skew-green" onClick={this.toggle}>{this.props.buttonLabel}</button>
                     <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
                         <ModalHeader toggle={this.toggle} className="modal-header">
@@ -93,7 +95,11 @@ export default class Cropper extends React.Component {
                                 </form>
                                 <div className="imgPreview">
                                     {$imagePreview}
+                                </div>                                
+                                <div id="imgPreview">
                                 </div>
+
+                                
                             </div>
 
 

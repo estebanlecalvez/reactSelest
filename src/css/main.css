@@ -6525,6 +6525,24 @@ body {
   overflow-x: hidden;
   font-family: SourceSansPro; }
 
+.bandeau-pub {
+  height: 57px;
+  display: block;
+  padding: 0 0 0 0;
+  box-shadow: 0 5px 5px grey; }
+  .bandeau-pub .image {
+    height: 100%;
+    animation: linear marqueelike 40s infinite;
+    background-image: url("../img/contenu/bandeau_pub/bandeau_pub.png"); }
+    .bandeau-pub .image:hover {
+      animation-play-state: paused; }
+
+@-webkit-keyframes marqueelike {
+  0%, 100% {
+    margin-left: 0; }
+  99.99% {
+    margin-left: -100%; } }
+
 .header {
   background-color: #ffffff; }
 

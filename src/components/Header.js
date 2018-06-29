@@ -40,6 +40,9 @@ export default class Header extends Component {
             return (
                 <Router>
                     <div className="header">
+                        <div className="bandeau-pub">
+                            <h1>BANDEAU PUB</h1>
+                        </div>
                         <div className="top-header">
                             <div className="right-top" >
                                 <ul>
@@ -121,6 +124,10 @@ export default class Header extends Component {
                                         <Connexion />
                                     </li>
                                 </ul>
+                            </div>
+                        </div>
+                        <div className="bandeau-pub">
+                            <div className="image">
                             </div>
                         </div>
                         <div className="container">

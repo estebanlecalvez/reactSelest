@@ -20,8 +20,9 @@ export default class MonCompte extends Component {
                         <div className="col-2 left-col-my-account">
                             <p>Davi Tofi</p>
                             <a><img src={Photo} className="imgMyAccount zoom-hover" /></a>
-                            <Cropper buttonLabel="Changer ma photo de profil" />
-                        </div><div className="col-1"></div>
+                            <Cropper buttonLabel="Changer ma photo de profil"></Cropper>
+                        </div>
+                        <div className="col-1"></div>
                         <div className="col-4 ">
                             <p>Age :<a>26</a></p>
                             <p>Position : <a>Vitré</a><img src={positionLogo} className="small-icon zoom-hover" /></p>
