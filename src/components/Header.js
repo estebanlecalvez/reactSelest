@@ -40,9 +40,6 @@ export default class Header extends Component {
             return (
                 <Router>
                     <div className="header">
-                        <div className="bandeau-pub">
-                            <h1>BANDEAU PUB</h1>
-                        </div>
                         <div className="top-header">
                             <div className="right-top" >
                                 <ul>
@@ -50,17 +47,21 @@ export default class Header extends Component {
                                         <div class="dropdown">
                                             <a><img src={profilImg} className="imgHeader" /></a>
                                             <div class="dropdown-content">
-                                                <Link to="mon_compte"><p>Editer mon profil.</p></Link>
-                                                <Link to="mes_demandes"><p>Mes demandes</p></Link>
-                                                <Link to="mes_offres"><p>Mes offres</p></Link>
+                                                <Link to="mon_compte"><p className="dropdown-text">Editer mon profil.</p></Link>
+                                                <Link to="mes_demandes"><p className="dropdown-text">Mes demandes</p></Link>
+                                                <Link to="mes_offres"><p className="dropdown-text">Mes offres</p></Link>
                                                 <p>Mes souets : <a id="souetUser">12</a></p>
-                                                <Link to="parametre_compte"><p>Paramètres</p></Link>
+                                                <Link to="parametre_compte"><p className="dropdown-text">Paramètres</p></Link>
                                                 <hr />
                                                 <LogoutButton buttonLabel="Deconnexion" />
                                             </div>
                                         </div>
                                     </li>
                                 </ul>
+                            </div>
+                        </div>
+                        <div className="bandeau-pub">
+                            <div className="image">
                             </div>
                         </div>
                         <div className="container">

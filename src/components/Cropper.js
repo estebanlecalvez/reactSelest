@@ -7,8 +7,8 @@ import Photo from '../img/contenu/photoFemme.jpg';
 import Crop from 'react-cropper';
 import 'cropperjs/dist/cropper.css';
 const paddingLeft = {
-    paddingLeft:"75px"
-  };
+    paddingLeft: "75px"
+};
 export default class Cropper extends React.Component {
 
 
@@ -95,11 +95,11 @@ export default class Cropper extends React.Component {
                                 </form>
                                 <div className="imgPreview">
                                     {$imagePreview}
-                                </div>                                
-                                <div id="imgPreview">
+                                </div>
+                                <div id="cropped-image">
                                 </div>
 
-                                
+
                             </div>
 
 

@@ -6,6 +6,9 @@ import Banniere from '../components/Banniere';
 
 import LeftMenu from '../components/LeftMenu';
 import Photo from '../img/profile_picture/demandes/homme2.png';
+const center = {
+    marginLeft: "70px"
+};
 
 export default class OthersProfile extends Component {
     render() {
@@ -26,7 +29,13 @@ export default class OthersProfile extends Component {
                         <p><b>Description : </b><a>Jeune footballeur venant d'arriver sur Vitré et cherchant à faire des connaissances et aider les autres.</a></p>
                         <p><b>Position : </b><a>Vitré</a></p>
                         <p><b>Adresse : </b><a>Cet utilisateur n'a pas souhaité rendre son adresse publique.</a></p>
-                        <Link to="/"><Button className="btn btn-danger">Accueil</Button></Link>
+                        <div className="card-text">
+                            <ul>
+                                <li>
+                                    <Link to="/" className="btn-skew-red">Accueil</Link>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

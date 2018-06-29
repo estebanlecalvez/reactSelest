@@ -102,21 +102,20 @@ export default class LeftMenu extends Component {
                     <p>Categories</p>
                 </div>
                 <div className="categorie-parent">
-                    <p>Parent</p>
                     <div className="categorie-enfant">
-                        <p>Enfant</p>
+                        <p>Baby-Sitting</p>
                     </div>
                     <div className="categorie-enfant">
-                        <p>Enfant</p>
+                        <p>Jardinage</p>
                     </div>
                     <div className="categorie-enfant">
-                        <p>Enfant</p>
+                        <p>Bricolage</p>
                     </div>
                     <div className="categorie-enfant">
-                        <p>Enfant</p>
+                        <p>Cuisine</p>
                     </div>
                     <div className="categorie-enfant">
-                        <p>Enfant</p>
+                        <p>Entretien</p>
                     </div>
 
                 </div>

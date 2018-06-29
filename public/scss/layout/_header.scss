@@ -142,7 +142,8 @@ body{
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #746c91;
+  border:3px solid #9d97b8;
   min-width: 200px;
   max-width:300px;
   margin-left:-75px;
@@ -150,8 +151,14 @@ body{
   padding: 12px 16px;
   text-align:center;
   z-index: 1;
+  .dropdown-text{
+    color:white;
+    &:hover{
+      color:rgba(255, 255, 255, 0.726);
+      text-decoration:none;
+    }
+  }
 }
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
