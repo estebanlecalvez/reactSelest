@@ -6433,10 +6433,7 @@ p {
 a {
   transition: all .3s ease-in-out; }
   a:hover {
-    text-decoration: underline; }
-  a:focus {
-    outline: none;
-    text-decoration: none; }
+    cursor: pointer; }
 
 blockquote {
   margin: 40px 40px 24px;
@@ -6538,9 +6535,9 @@ body {
       animation-play-state: paused; }
 
 @-webkit-keyframes marqueelike {
-  0%, 100% {
+  0% {
     margin-left: 0; }
-  99.99% {
+  100% {
     margin-left: -100%; } }
 
 .header {

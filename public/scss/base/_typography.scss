@@ -8,12 +8,7 @@ p {
 a {
   transition: all .3s ease-in-out;
   &:hover {
-    text-decoration: underline;
-
-  }
-  &:focus {
-    outline: none;
-    text-decoration: none;
+    cursor: pointer;
   }
 }
 blockquote {

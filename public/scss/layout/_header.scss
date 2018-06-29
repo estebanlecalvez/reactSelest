@@ -15,11 +15,10 @@ body{
     }
   }
   box-shadow : 0 5px 5px grey;
-
 }
 @-webkit-keyframes marqueelike {
-  0%, 100% {margin-left:0;}
-  99.99% {margin-left:-100%;}
+  0% {margin-left:0;}
+  100% {margin-left:-100%;}
 }
 .header{
   background-color: #ffffff;
