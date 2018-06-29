@@ -66,7 +66,7 @@ export default class Demandes extends Component {
     }
 
     souetColor() {
-        for (var i = 1; i < 4; i++) {
+        for (var i = 1; i < 5; i++) {
             var nbSouetsDOM = document.getElementById("SouetsUserNb" + i);
             var nbSouets = parseInt(nbSouetsDOM.innerText);
             if (nbSouets < -1500) {
@@ -138,7 +138,7 @@ export default class Demandes extends Component {
                                     <a> Demandeur(se)</a>
                                     <img src={David} />
                                     <p><b>David</b></p>
-                                    <p>Souèts: <b><a id="SouetsUserNb3">500</a></b></p>
+                                    <p>Souèts: <b><a id="SouetsUserNb3">1000</a></b></p>
                                 </div>
                                 <div class="col-sm-9 demandes-text">
                                     <div className="demandes-title">
